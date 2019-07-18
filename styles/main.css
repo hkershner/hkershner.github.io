@@ -1,6 +1,54 @@
+body {
+  padding-bottom: 5rem;
+}
+
 header {
-  background: url(../images/hero-image.jpg) center / cover;
+  background: url(../images/hero-image1.jpg) center / cover;
   height: 60vh;
   justify-content: center;
   text-align;
+}
+
+h1 {
+  color: hsla(0, 100%, 2%, .9);
+  font-weight: bold;
+  text-align: center;
+}
+
+.slogan {
+  color: hsla(0, 100%, 2%, .7);
+  font-weight: lighter;
+  text-align: center;
+  font-size: 1.6em;
+}
+
+main {
+  max-width: 900px;
+}
+
+.project-description {
+  padding-left: 0;
+}
+
+.project img {
+  width: 100%;
+}
+
+footer.mdl-mini-footer {
+  bottom: 0;
+  padding: .5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+footer.mdl-mini-footer > ul {
+  margin: auto;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  header.mdl-layout__header {
+    display: flex;
+  }
 }
