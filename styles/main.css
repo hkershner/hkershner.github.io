@@ -13,7 +13,7 @@ html {
 
 header {
   background-color: #1E425D;
-  height: 9vh;
+  height: 18vh;
   max-width: inherit;
 }
 
@@ -22,7 +22,8 @@ a {
   float: right;
   font-family: "Crimson Text", serif;
   font-size: 1.7rem;
-  padding: 2.7rem;
+  padding: 3rem;
+  padding-top: 8.6rem;
   text-decoration: none;
 }
 
@@ -30,7 +31,7 @@ a {
   display: inline-flex;
   float: left;
   margin-left: 3rem;
-  padding-top: 1.5rem;
+  padding-top: 7.5rem;
 }
 
 /*.name {
@@ -56,9 +57,7 @@ a {
 
 .container {
   background-color: white;
-  margin: 0 auto;
-  padding-bottom: 2.5rem;
-  width: 32rem;
+  margin: 3rem;
 }
 
 p {
