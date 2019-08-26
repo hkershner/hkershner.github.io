@@ -15,7 +15,15 @@ header {
   background-color: #1E425D;
   height: 9vh;
   max-width: inherit;
+}
 
+a {
+  color: #E5E5E5;
+  float: right;
+  font-family: "Crimson Text", serif;
+  font-size: 1.7rem;
+  padding: 2.7rem;
+  text-decoration: none;
 }
 
 .logo {
