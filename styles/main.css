@@ -41,26 +41,21 @@ a {
   padding-top: 2.2rem;
 }*/
 
-.about {
-  display: inline-flex;
-  float: right;
-  padding-right: 3rem;
-  padding-top: 2.2rem;
-}
-
-.work {
-  display: inline-flex;
-  float: right;
-  padding-right: 4rem;
-  padding-top: 2.2rem;
-}
-
 .container {
   background-color: white;
   margin: 3rem;
 }
 
+/* Case Study paragraph text */
 p {
+  font-family: "Crimson Text", serif;
+  font-size: 1.5rem;
+  line-height: 167.2%;
+  margin-top: .5rem;
+}
+
+/* Landing page paragraph text */
+.p1 {
   font-family: "Crimson Text", serif;
   font-size: 1.8rem;
   margin-top: .5rem;
@@ -72,11 +67,18 @@ h1 {
   padding-bottom: 3rem;
 }
 
+/* Let's Connect */
 h2 {
   font-family: "Julius Sans One", sans-serif;
   font-size: 2rem;
   padding-bottom: 2rem;
   text-align: center;
+}
+
+/* Case Study Titles */
+h3 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 2.4rem;
 }
 
 section {
@@ -87,6 +89,19 @@ section {
   line-height: 3rem;
 }
 
+button {
+  background: #2F8B8B;
+  border: none;
+  box-shadow: 0rem 0rem 0.5rem grey;
+  border-radius: 3rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 1.5rem;
+}
+
+/* Gray element across case study cards */
 .label {
   background-color: #1E425D;
   bottom: 5.5rem;
@@ -96,6 +111,30 @@ section {
   text-align: center;
 }
 
+/* Case Study titles */
+.casestudy {
+  color: #E5E5E5;
+  font-family: "Crimson Text", serif;
+  font-size: 1.8rem;
+  margin-top: .5rem;
+}
+
+/* cloudDesk brand name */
+.cloud {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Case Study call outs */
+.highlights {
+  background: #1E425D;
+  color: #ffff;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  padding-bottom: 8rem;
+  padding-left: 5rem;
+}
+
+/* footer elements */
 .social {
   display: inline-flex;
 }
@@ -117,6 +156,10 @@ padding: 3rem;
 footer {
   position: absolute;
   height: 2.5rem;
+}
+
+.banner {
+  width: 100vw;
 }
 
 /* @media screen and (max-width: 1024px) {
