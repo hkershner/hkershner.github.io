@@ -30,7 +30,6 @@ a {
 .logo {
   display: inline-flex;
   float: left;
-  margin-left: 3rem;
   padding-top: 7.5rem;
 }
 
@@ -52,6 +51,7 @@ p {
   font-size: 1.5rem;
   line-height: 167.2%;
   margin-top: .5rem;
+  padding-bottom: 7rem;
 }
 
 /* Landing page paragraph text */
@@ -67,18 +67,32 @@ h1 {
   padding-bottom: 3rem;
 }
 
-/* Let's Connect */
 h2 {
   font-family: "Julius Sans One", sans-serif;
   font-size: 2rem;
   padding-bottom: 2rem;
-  text-align: center;
 }
 
 /* Case Study Titles */
 h3 {
   font-family: "Julius Sans One", sans-serif;
   font-size: 2.4rem;
+}
+
+/* User Survey Percentages or Highlights */
+h4 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 4.8rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+/* Let's Connect */
+h5 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
 }
 
 section {
@@ -97,7 +111,7 @@ button {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 9rem;
   padding: 1.5rem;
 }
 
@@ -125,18 +139,84 @@ button {
 }
 
 /* Case Study call outs */
-.highlights {
+#case-study-highlights {
   background: #1E425D;
+  border-radius: 0 3rem 3rem 0;
   color: #ffff;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-  padding-bottom: 8rem;
+  margin-left: -3rem;
   padding-left: 5rem;
+  padding-top: 6rem;
+}
+
+.r-d-t { /* roles - Deliverables - Tools Used */
+  margin-right: 6rem;
+}
+
+.caption_left {
+  background: #1E425D;
+  border-radius: 0 0 3rem 0;
+  bottom: 3rem;
+  color: #ffff;
+  margin-left: -3rem;
+  margin-bottom: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 7rem;
+  position: relative;
+  width: 100%;
+}
+
+.caption_right {
+  background: #1E425D;
+  border-radius: 0 0 0 3rem;;
+  bottom: 3rem;
+  color: #ffff;
+  margin-bottom: 5rem;
+  margin-left: -3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 7rem;
+  position: relative;
+  width: 100%;
+}
+
+.colorPalette {
+  display: inline-block;
+  padding: 3rem;
+}
+
+ul {
+  list-style-type: circle;
+  margin-left: 5rem;
+  margin-right: 3rem;
+  margin-bottom: 5rem;
+}
+
+li {
+  font-family: "Crimson Text", serif;
+  font-size: 1.5rem;
+  line-height: 167.2%;
+  padding-bottom: 2rem;
+}
+
+.keyTakeaways {
+  background: #1E425D;
+  border-radius: 3rem 0 0 3rem;
+  bottom: 3rem;
+  color: #ffff;
+  margin-bottom: 5rem;
+  margin-left: -3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 7rem;
+  width: 100%;
 }
 
 /* footer elements */
 .social {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .email {
