@@ -212,6 +212,14 @@ li {
   width: 100%;
 }
 
+#profilePic {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7rem;
+  margin-top: 7rem;
+}
+
 /* footer elements */
 .social {
   display: flex;
