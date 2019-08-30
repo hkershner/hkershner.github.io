@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -17,7 +17,7 @@ header {
   max-width: inherit;
 }
 
-a {
+.navLink {
   color: #E5E5E5;
   float: right;
   font-family: "Crimson Text", serif;
@@ -30,6 +30,7 @@ a {
 .logo {
   display: inline-flex;
   float: left;
+  padding-left: 3rem;
   padding-top: 7.5rem;
 }
 
@@ -54,11 +55,32 @@ p {
   padding-bottom: 7rem;
 }
 
+.italic {
+  font-style: italic;
+  padding-bottom: 2rem;
+}
+
 /* Landing page paragraph text */
-.p1 {
+#heroText {
   font-family: "Crimson Text", serif;
   font-size: 1.8rem;
   margin-top: .5rem;
+}
+
+/*Case study label text on landing page */
+.p1 {
+  color: #E5E5E5;
+  font-family: "Crimson Text", serif;
+  font-size: 1.8rem;
+  margin-top: .5rem;
+}
+
+/*color palette text */
+.p2 {
+  font-family: "Crimson Text", serif;
+  font-size: 1.5rem;
+  line-height: 167.2%;
+  padding-bottom: 0;
 }
 
 h1 {
@@ -77,6 +99,10 @@ h2 {
 h3 {
   font-family: "Julius Sans One", sans-serif;
   font-size: 2.4rem;
+}
+
+.bioHeading {
+  padding-bottom: 2rem;
 }
 
 /* User Survey Percentages or Highlights */
@@ -101,6 +127,14 @@ section {
 
 .hero {
   line-height: 3rem;
+}
+
+.primary_card {
+  padding-top: 8rem;
+}
+
+.caseStudyPic {
+  width: 100%;
 }
 
 button {
@@ -150,6 +184,24 @@ button {
 
 .r-d-t { /* roles - Deliverables - Tools Used */
   margin-right: 6rem;
+  padding-bottom: 4rem;
+}
+
+#userFlows {
+  margin-left: -3rem
+}
+
+#wireframeRight {
+  float: right
+}
+
+#wireframeLeft {
+  margin-bottom: 7rem;
+}
+
+#twoFactorAuth {
+  margin-bottom: 7rem;
+  width: 100%;
 }
 
 .caption_left {
@@ -163,7 +215,7 @@ button {
   padding-right: 3rem;
   padding-top: 7rem;
   position: relative;
-  width: 100%;
+  width: 100vw;
 }
 
 .caption_right {
@@ -177,12 +229,13 @@ button {
   padding-right: 3rem;
   padding-top: 7rem;
   position: relative;
-  width: 100%;
+  width: 100vw;
 }
 
 .colorPalette {
   display: inline-block;
   padding: 3rem;
+  padding-bottom: 8rem;
 }
 
 ul {
@@ -209,7 +262,7 @@ li {
   padding-left: 3rem;
   padding-right: 3rem;
   padding-top: 7rem;
-  width: 100%;
+  width: 100vw;
 }
 
 #profilePic {
