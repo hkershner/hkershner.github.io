@@ -309,6 +309,21 @@ footer {
   width: 100vw;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: 65% auto;
+  align-items: center;
+}
+.grid-primary {
+  grid-row: span 2;
+  padding: 5rem;
+}
+
+@media (max-width: 575px) {
+  .project-grid { grid-template-columns: auto; }
+  .grid-primary { grid-row: span 1; }
+}
+
 @media (min-width: 575px) {
   h1 {
     font-size: 4rem;
@@ -328,9 +343,11 @@ footer {
   }
 
   .project_card {
+    /*
     display: inline-block;
     padding: 2rem;
     width: 49%;
+    */
   }
 
   .caseStudyPic {
@@ -359,13 +376,17 @@ footer {
   }
 
   .primary_card {
+    /*
     display: inline-block;
     width: 60%;
+    */
   }
 
   .project_card {
+    /*
     float: right;
     width: 25%;
+    */
   }
 
 }
