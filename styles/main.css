@@ -34,12 +34,10 @@ header {
   padding-top: 3rem;
 }
 
-/*.name {
-  display: inline-flex;
-  float: left;
-  padding-left: 2rem;
-  padding-top: 2.2rem;
-}*/
+.name {
+  display: none;
+}
+
 .container {
   background-color: white;
   padding: 3rem;
@@ -306,26 +304,57 @@ footer {
 }
 
 footer {
-    background-image: url(/images/FooterDetail.svg);
-    background-size: cover;
-    height: 8rem;
-    width: 100%;
+  background-image: url(/images/FooterDetail.svg);
+  background-size: cover;
+  height: 8rem;
+  width: 100%;
 }
 
 @media (max-width: 575px) {
-  .project-grid { grid-template-columns: auto; }
-  .grid-primary { grid-row: span 1; }
+  .project-grid {
+    grid-template-columns: auto;
+  }
+
+  .grid-primary {
+    grid-row: span 1;
+  }
 }
 
 /* tablets */
-
 @media (min-width: 575px) {
+  .container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .name {
+    color: #E5E5E5;
+    display: inline-flex;
+    float: left;
+    font-family: "Crimson Text", serif;
+    font-size: 1.7rem;
+    padding: 3rem;
+    padding-top: 5rem;
+  }
+
   h1 {
     font-size: 4rem;
   }
 
+  h3 {
+    font-size: 2.5rem;
+  }
+
   h5 {
     font-size: 2.2rem;
+  }
+
+  .bioHeading {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.8rem;
   }
 
   .p1 {
@@ -357,14 +386,22 @@ footer {
   .grid-primary {
     grid-column: span 2;
   }
+
+  #bioIntro {
+    margin-top: 7rem;
+  }
+
+  #profilePic {
+    display: inline;
+    float: right;
+    margin: 7rem;
+  }
 }
 
 /*laptops & desktops */
-
 @media (min-width: 991px) {
-  .container {
-    margin-left: 5rem;
-    margin-right: 5rem;
+  header {
+    height: 15vh;
   }
 
   .logo {
@@ -383,7 +420,7 @@ footer {
     display: grid;
     grid-template-columns: 65% 23%;
     align-items: center;
-    grid-column-gap: 8rem;
+    grid-column-gap: 10rem;
   }
 
   .grid-primary {
@@ -391,8 +428,7 @@ footer {
     grid-row: span 2;
   }
 
-.p3 {
-  font-size: 1.8rem;
-}
-
+  .p3 {
+    font-size: 1.8rem;
+  }
 }
