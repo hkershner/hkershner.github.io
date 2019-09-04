@@ -311,7 +311,7 @@ footer {
 }
 
 @media (max-width: 575px) {
-  .project-grid {
+  .project-grid, .hero-grid {
     grid-template-columns: auto;
   }
 
@@ -427,6 +427,20 @@ footer {
     grid-column: auto;
     grid-row: span 2;
   }
+
+  .hero-grid {
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 40% 60%;
+  }
+
+.hero-grid-left {
+  grid-area: left;
+}
+
+.hero-grid-right {
+  grid-area: right;
+}
 
   .p3 {
     font-size: 1.8rem;
