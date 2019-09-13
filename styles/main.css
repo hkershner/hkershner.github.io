@@ -14,7 +14,7 @@ html {
 header {
   background-color: #1E425D;
   height: 12vh;
-  max-width: inherit;
+  width: 100vw;
 }
 
 .navLink {
@@ -127,10 +127,6 @@ section {
   padding-bottom: 8rem;
 }
 
-.hero-grid-left {
-  margin-left: 2rem;
-}
-
 .primary_card {
   text-decoration: none;
 }
@@ -198,6 +194,10 @@ button {
   margin-left: -3rem
 }
 
+#userFlowDesktop {
+  display: none;
+}
+
 #wireframeRight {
   float: right
 }
@@ -212,7 +212,7 @@ button {
 }
 
 .caption_left {
-  background: #1E425D;
+  background: #2D6086;
   border-radius: 0 0 3rem 0;
   bottom: 3rem;
   color: #ffff;
@@ -226,7 +226,7 @@ button {
 }
 
 .caption_right {
-  background: #1E425D;
+  background: #2D6086;
   border-radius: 0 0 0 3rem;
   ;
   bottom: 3rem;
@@ -395,21 +395,23 @@ footer {
     grid-column: span 2;
   }
 
+/*About Page*/
   #bioIntro {
+    margin-right: 15rem;
     margin-top: 7rem;
   }
 
   #profilePic {
     display: inline;
     float: right;
-    margin: 7rem;
+    padding-left: 2rem
   }
 }
 
 /*laptops & desktops */
 @media (min-width: 991px) {
   header {
-    height: 15vh;
+    height: 10vh;
   }
 
   .logo {
@@ -432,33 +434,12 @@ footer {
   }
 
   .container {
-    margin-left: 0;
+    margin-left: 14rem;
     padding-left: 0;
   }
 
   .sub-container {
     margin: 5rem;
-  }
-
-  .hero-grid {
-    display: block;
-  }
-
-  .hero-grid-left {
-    float: left;
-    width: 50%;
-    margin-left: 4rem;
-    padding-top: 5rem;
-  }
-
-  .highlights {
-    padding-top: 2rem;
-    width: 35%;
-    float: left;
-  }
-
-  .hero-grid-right {
-    float: right;
   }
 
   .left {
@@ -471,14 +452,6 @@ footer {
     display: inline-block;
   }
 
-  .summary {
-    clear: both;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto;
-    grid-gap: 2rem;
-  }
-
   .grid-primary {
     grid-column: auto;
     grid-row: span 2;
@@ -487,4 +460,5 @@ footer {
   .p3 {
     font-size: 1.8rem;
   }
+
 }
