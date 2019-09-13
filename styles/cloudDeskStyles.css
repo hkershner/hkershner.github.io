@@ -78,11 +78,6 @@
 
 /*laptops & desktops */
 @media (min-width: 991px) {
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
   .hero-grid {
     display: block;
   }
