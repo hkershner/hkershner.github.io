@@ -135,7 +135,7 @@ section {
   text-decoration: none;
 }
 
-.caseStudyPic {
+.caseStudyPic, .cloudCaseStudyPic {
   width: 100%;
 }
 
@@ -411,7 +411,7 @@ footer {
 /*laptops & desktops */
 @media (min-width: 991px) {
   header {
-    height: 10vh;
+    height: 15vh;
   }
 
   .logo {

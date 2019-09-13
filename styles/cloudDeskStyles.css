@@ -71,13 +71,18 @@
     width: 85vw;
   }
 
-  .caseStudyPic {
+  .cloudCaseStudyPic {
     padding-bottom: 8rem;
   }
 }
 
 /*laptops & desktops */
 @media (min-width: 991px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .hero-grid {
     display: block;
   }
@@ -181,19 +186,24 @@
     width: 60%;
   }
 
-  .caseStudyPic {
+  .cloudCaseStudyPic {
     width: 60%;
   }
 
   /*Collaborative Features Wireframes*/
-  #chat {
+    #chat {
     float: right;
     margin-right: 10rem;
+    width: 70%;
   }
 
   #collabCaption {
     margin-bottom: 10rem;
-    margin-top: 60rem;
+    margin-top: 40rem;
+  }
+
+  #newDoc {
+    width: 60%;
   }
 
   /*Other Elements Wireframes*/
@@ -292,10 +302,13 @@
   .conclusion {
     display: grid;
     grid-gap: 10rem;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 30%;
   }
 
   .keyTakeaways {
-    height: 30vw;
+    float: right;
+    margin: auto;
+    padding-right: 15rem;
+    width: 50vw;
   }
 }
