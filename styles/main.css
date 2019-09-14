@@ -207,7 +207,7 @@ section {
 
 .caption_left {
   background: #2D6086;
-  border-radius: 0 0 3rem 0;
+  border-radius: 0 3rem 3rem 0;
   bottom: 3rem;
   color: #ffff;
   margin-left: -3rem;
@@ -221,7 +221,7 @@ section {
 
 .caption_right {
   background: #2D6086;
-  border-radius: 0 0 0 3rem;
+  border-radius: 3rem 0 0 3rem;
   bottom: 3rem;
   color: #ffff;
   margin-bottom: 5rem;
