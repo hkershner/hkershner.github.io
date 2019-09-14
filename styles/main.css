@@ -301,6 +301,7 @@ li {
 }*/
 
 footer {
+  background-color: #1E425D;
   background-image: url(/images/FooterDetail.svg);
   background-size: cover;
   height: 8rem;

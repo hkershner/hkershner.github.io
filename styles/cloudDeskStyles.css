@@ -172,8 +172,6 @@
     grid-template-columns: 40% 30%;
     grid-template-rows: auto auto;
     grid-row-gap: 5rem;
-    /*margin-left: 9rem;
-  margin-right: 9rem;*/
   }
 
   .statTwo, .statThree {
