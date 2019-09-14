@@ -144,7 +144,16 @@ section {
   width: 100%;
 }
 
-button {
+#cloudHeroSmall {
+  margin-top: 9rem;
+  width: 95%;
+}
+
+#cloudHero {
+  display: none;
+}
+
+.button {
   background: #2F8B8B;
   border: none;
   box-shadow: 0rem 0rem 0.5rem grey;
@@ -154,6 +163,7 @@ button {
   margin-top: 5rem;
   margin-bottom: 9rem;
   padding: 1.5rem;
+  text-decoration: none;
 }
 
 /* Gray element across case study cards */
@@ -195,27 +205,6 @@ button {
   padding-bottom: 4rem;
 }
 
-#userFlows {
-  margin-left: -3rem
-}
-
-#userFlowDesktop {
-  display: none;
-}
-
-#wireframeRight {
-  float: right
-}
-
-#wireframeLeft {
-  margin-bottom: 7rem;
-}
-
-#twoFactorAuth {
-  margin-bottom: 7rem;
-  width: 100%;
-}
-
 .caption_left {
   background: #2D6086;
   border-radius: 0 0 3rem 0;
@@ -233,7 +222,6 @@ button {
 .caption_right {
   background: #2D6086;
   border-radius: 0 0 0 3rem;
-  ;
   bottom: 3rem;
   color: #ffff;
   margin-bottom: 5rem;

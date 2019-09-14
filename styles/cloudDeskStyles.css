@@ -1,3 +1,38 @@
+#userFlows {
+  margin-left: -3rem
+}
+
+#userFlowDesktop {
+  display: none;
+}
+
+#wireframeLeft, #wireframeRight, #logInWireframe {
+  display: block;
+  margin: auto;
+  padding: 2rem;
+}
+
+#wireframeLeft {
+  margin-bottom: 7rem;
+}
+
+#twoFactorAuth {
+  width: 100%;
+}
+
+#chat {
+  padding-top: 2rem;
+}
+
+#newDoc {
+  padding-top: 2rem;
+  width: 100%;
+}
+
+#cloudLogos {
+  padding-bottom: 3rem;
+}
+
 /* tablets */
 @media (min-width: 575px) {
   .hero-grid-left {
@@ -78,14 +113,25 @@
 
 /*laptops & desktops */
 @media (min-width: 991px) {
+  #cloudHeroSmall {
+    display: none;
+  }
+
+  #cloudHero {
+    display: flex;
+  }
+
   .hero-grid {
     display: block;
+  }
+
+  .hero-grid-right {
+    width: 45%;
   }
 
   .hero-grid-left {
     float: left;
     width: 50%;
-    /*margin-left: 14rem;*/
     padding-right: 10rem;
     padding-top: 5rem;
   }
