@@ -28,7 +28,7 @@ header {
   font-family: "Crimson Text", serif;
   font-size: 1.7rem;
   padding: 3rem;
-  padding-top: 5rem;
+  padding-top: 4rem;
   text-decoration: none;
 }
 
@@ -36,7 +36,7 @@ header {
   display: inline-flex;
   float: left;
   padding-left: 3rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .name {
@@ -295,10 +295,10 @@ li {
   padding-right: 8rem;
 }
 
-footer {
+/*footer {
   position: absolute;
   height: 2.5rem;
-}
+}*/
 
 footer {
   background-image: url(/images/FooterDetail.svg);
