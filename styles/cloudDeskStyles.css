@@ -10,6 +10,7 @@
   display: block;
   margin: auto;
   padding: 2rem;
+  width: 100%;
 }
 
 #wireframeLeft {
@@ -41,15 +42,6 @@
 
   .cloudDeskBreak {
     text-align: center;
-  }
-
-  #case-study-highlights {
-    margin-left: -10rem;
-  }
-
-  .r-d-t {
-    margin-left: 6rem;
-    margin-right: 10rem;
   }
 
   .statOne, .statTwo, .statThree {
@@ -89,19 +81,19 @@
 
   .wireframes {
     display: grid;
-    grid-column-gap: 5rem;
     grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100%;
+    margin-bottom: 9rem;
+  }
+
+  #wireframeLeft, #wireframeRight, #logInWireframe {
+    margin: 0;
+    padding: 0;
+    width: 50vw;
   }
 
   .colorPalette {
     margin-left: 10rem;
-  }
-
-  .keyTakeaways {
-    margin-left: 10rem;
-    padding-left: 5rem;
-    padding-right: 10rem;
-    width: 85vw;
   }
 
   .cloudCaseStudyPic {
@@ -117,6 +109,7 @@
 
   #cloudHero {
     display: flex;
+    width: 100%;
   }
 
   .hero-grid {
@@ -134,29 +127,9 @@
     padding-top: 5rem;
   }
 
-  .highlights {
-    float: left;
-    margin-left: -11rem;
-    padding-top: 2rem;
-    width: 35%;
-  }
-
   .hero-grid-right {
     float: right;
     margin-top: 6rem;
-  }
-
-  .summary {
-    clear: both;
-    display: grid;
-    grid-column-gap: 25rem;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: auto auto;
-    padding-top: 20rem;
-  }
-
-  .r-d-t {
-    padding-left: 10rem;
   }
 
   .cloudDeskBreak {
@@ -210,10 +183,6 @@
     width: 50vw;
   }
 
-  .wireframes {
-    margin-bottom: 9rem;
-  }
-
   #wireframeLeft, #wireframeRight, #logInWireframe {
     width: 20vw;
   }
@@ -228,7 +197,7 @@
   }
 
   /*Collaborative Features Wireframes*/
-    #chat {
+  #chat {
     float: right;
     margin-right: 10rem;
     width: 70%;
@@ -285,7 +254,7 @@
     margin-bottom: 9rem;
   }
 
-/*Hifi Mockups & Testing*/
+  /*Hifi Mockups & Testing*/
   .testing {
     display: grid;
     grid-column-gap: 8rem;
@@ -336,16 +305,4 @@
     width: 50rem;
   }
 
-  .conclusion {
-    display: grid;
-    grid-gap: 10rem;
-    grid-template-columns: 50% 30%;
-  }
-
-  .keyTakeaways {
-    float: right;
-    margin: auto;
-    padding-right: 15rem;
-    width: 50vw;
-  }
 }

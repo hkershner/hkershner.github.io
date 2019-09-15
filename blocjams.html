@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147969661-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-147969661-1');
+  </script>
+
+  <title>Portfolio | Heidi Kershner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Reset -->
+  <link rel="stylesheet" href="styles/reset.css">
+
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Bloc Jams Styles -->
+  <link rel="stylesheet" href="styles/blocJamsStyles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Julius+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/mobile.logo.svg" alt="personal logo">
+    </a>
+    <div class="name">Heidi Kershner</div>
+    <a href="bio.html" class="navLink">About</a>
+    <a href="index.html#projects" class="navLink">Work</a>
+  </header>
+  <main>
+    <div class="container">
+      <div class="jams-hero-grid">
+        <div class="jams-hero-grid-left">
+          <h3>Bloc Jams jQuery Project</h3>
+          <p>Bloc Jams is a fully functioning music player built using JQuery.</p>
+          <a href="https://kershner-bloc-jams.netlify.com/" class="button">View Project</a>
+        </div>
+        <div class="jams-hero-grid-right">
+          <img src="images/blocJams/blocJamsSmall.jpg" alt="Bloc Jams Music player" id="blocJamsSmall">
+          <img src="images/blocJams/blocJamsLarge.jpg" alt="Bloc Jams Music player" id="blocJamsLarge">
+        </div>
+      </div>
+      <section class="highlights">
+        <div id="case-study-highlights">
+          <div class="r-d-t">
+            <h2>My Role</h2>
+            <p class="p2">Frontend Development</p>
+          </div>
+          <div class="r-d-t">
+            <h2>Deliverable</h2>
+            <p class="p2">Fully coded music player in jQuery</p>
+          </div>
+          <div class="r-d-t">
+            <h2>Tools Used</h2>
+            <p class="p2">Atom</p>
+            <p class="p2">GitHub</p>
+            <p class="p2">JS Bin</p>
+            <p class="p2">Netlify</p>
+          </div>
+        </div>
+      </section>
+      <div class="sub-container">
+        <section class="summary">
+          <div class="grid-left">
+            <h1>Challenge</h1>
+            <p>Users want a way to easily access their music online and they expect their music player to include certain features: recognizable controls for playing and pausing, a slider to control the volume level, and a slider to control the time
+              position of the currently playing songs. In short, users want complete control over their listening experince via a clean, unobtrusive interface.</p>
+          </div>
+          <div class="grid-right">
+            <h1>Solution</h1>
+            <p>Bloc Jams is an online music player that offers users complete control over their listening experience. Bloc Jams offers its users expected music controls including sliders for volume and time position as well as play and pause
+              buttons. Users can enjoy their listening experience while also interacting with a clean and minimalistic interface.</p>
+          </div>
+            <img src="images/blocJams/blocJamsBreak.jpg" class="blocJamsBreak" alt="Section Break">
+        </section>
+
+        <section class="process">
+          <div class="userStories">
+            <div class="storiesIntro">
+            <h1>Process</h1>
+            <h2>User Stories</h2>
+            <p id="storiesText">I began this project with three main user stories. These user stories directed my work and I referred back to them constantly in order to make sure that what I was creating would deliver the intended value to users.</p>
+          </div>
+          <div id="storyOne">
+            <h6>As a listener, I want to see basic information about the album so that I can decide whether I'm interested in it or not.</h6>
+          </div>
+          <div id="storyTwo">
+            <h6>As a listener, I want to see the album's songs and play/pause songs by clicking on them so that I can change tracks.</h6>
+          </div>
+          <div id="storyThree">
+            <h6>As a listener, I want to have a set of standard music controls so that I have complete control over my listening experience.</h6>
+          </div>
+          </div>
+          <div class="albumInfo">
+            <h2>Initial Album Information</h2>
+            <p>The first step in this process was to analyze the existing code given to me by Bloc.io. Then, to address the first user story, I needed to add the following in order to display basic information about the curently playing album:</p>
+          </div>
+          <div class="codeContainer">
+            <pre>
+              <code>
+                {
+                  $('#album-title').text(album.title);
+                  $('img#album-cover-art').attr('src', album.albumArtUrl);
+                  $('#artist').text(album.artist);
+                  $('#release-info').text(album.releaseInfo);
+                }
+                </code>
+                </pre>
+          </div>
+          <div class="songListPlayPause">
+            <h2>Song List & Play/Pause</h2>
+            <p>My second user story was: As a listener, I want to see the album's songs and play/pause songs by clicking on them so that I can change tracks. To address this user story I added the following jQuery code to the project:</p>
+          </div>
+          <div class="codeContainer">
+            <pre>
+            <code>
+              {
+                album.songs.forEach((song, index) => {
+                  song.element = $(`
+                    &lt;tr>
+                      &lt;td>
+                        &lt;button>
+                          &lt;span class="song-number">${index + 1}&lt;/span>
+                          &lt;span class="ion-play">&lt;/span>
+                          &lt;span class="ion-pause">&lt;/span>
+                        &lt;/button>
+                      &lt;/td>
+                      &lt;td>${song.title}&lt;/td>
+                      &lt;td>${player.prettyTime(song.duration)}&lt;/td>
+                      &lt;/tr>
+                    `);
+
+                    song.element.on('click', event => {
+                      player.playPause(song);
+                      $('button#play-pause').attr('playState', player.playState);
+                    });
+
+                    $('#song-list').append(song.element);
+                });
+              }
+              </code>
+              </pre>
+          </div>
+          <div class="standardControls">
+            <h2>Standard Music Controls</h2>
+            <p>To satisfy the last user story and to provide the user with a set of standard music controls (play, pause, previous, next, & slider bar controls) I added the following jQuery code:</p>
+          </div>
+          <div class="codeContainer">
+            <pre>
+              <code>
+                {
+                  $('button#play-pause').on('click', function() {
+                    helper.playPauseAndUpdate();
+                    $(this).attr('playState', player.playState);
+                  });
+
+                  $('button#next').on('click', function(){
+                    if (player.playState !== 'playing') { return; }
+
+                    const currentSongIndex = album.songs.indexOf(player.currentlyPlaying);
+                    const nextSongIndex = currentSongIndex + 1;
+                    if (nextSongIndex >= album.songs.length) { return; }
+
+                    const nextSong = album.songs[nextSongIndex];
+                    helper.playPauseAndUpdate(nextSong);
+                  });
+
+                  $('button#previous').on('click', function(){
+                    if (player.playState !== 'playing') { return; }
+
+                    const currentSongIndex = album.songs.indexOf(player.currentlyPlaying);
+                    const previousSongIndex = currentSongIndex - 1;
+                    if (previousSongIndex < &#48;) { return; }
+
+                    const previousSong = album.songs[previousSongIndex];
+                    helper.playPauseAndUpdate(previousSong);
+                  });
+
+                  $('#time-control input').on('input', function (event) {
+                    player.skipTo(event.target.value);
+                  });
+
+                  setInterval( () => {
+                    if (player.playState !== 'playing') { return; }
+                    const currentTime = player.getTime();
+                    const duration = player.getDuration();
+                    const percent = (currentTime / duration) * 100;
+                    $('#time-control .current-time').text(player.prettyTime(currentTime));
+                    $('#time-control input').val(percent);
+                  }, 1000);
+
+                  $('#volume-control input').on('input', function (event) {
+                    player.setVolume(event.target.value);
+                  });
+                }
+                </code>
+                </pre>
+          </div>
+            <img src="images/blocJams/blocJamsBreak.jpg" class="blocJamsBreak" alt="Section Break">
+        </section>
+        <section class="conclusion">
+          <div id="conclusionText">
+            <h1>Conclusion</h1>
+              <div class="keyTakeaways">
+              <h1>Key Takeaways</h1>
+              <p>This was a challenging project that introduced me to jQuery. Building the Bloc Jams music player pushed me to draw on my working knowledge of JavaScript in order to translate vanilla JS into jQuery. Ultimately, this project helped me
+                to understand the value and the limitations of jQuery while also helping me to develop best practices for approaching coding challenges.</p>
+            </div>
+        </section>
+        <section class="contact">
+          <h5>Let's Connect!</h5>
+          <div class="social">
+            <a href="mailto:hkershner@gmail.com" class="email">
+              <img src="images/email.svg" alt="Email">
+            </a>
+            <a href="https://www.linkedin.com/in/heidi-kershner-07387827/" class="linkedin">
+              <img src="images/linkedIn.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/hkershner" class="github">
+              <img src="images/GitHub.svg" alt="GitHub">
+            </a>
+          </div>
+        </section>
+      </div>
+  </main>
+  <footer>
+  </footer>
+</body>
+
+</html>
