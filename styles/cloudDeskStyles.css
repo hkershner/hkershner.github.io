@@ -227,6 +227,7 @@
     grid-column-gap: 20rem;
     grid-template-columns: 40% 60%;
     margin-bottom: 9rem;
+    margin-top: 40rem;
   }
 
   #cloudMoodboard {

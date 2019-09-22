@@ -3,14 +3,17 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147969661-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147969661-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-147969661-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-147969661-1');
+  </script>
 
   <title>Portfolio | Heidi Kershner</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,8 +47,8 @@
     <div class="container">
       <div class="hero-grid">
         <div class="hero-grid-left">
-          <h3><span class="cloud">cloudDesk</span> Case Study</h3>
-          <p><span class="cloud">cloudDesk</span> is a cloud storage service that caters to teachers, students, and other professionals working in the educational field.</p>
+          <h3>cloudDesk Case Study</h3>
+          <p>cloudDesk is a cloud storage service that caters to teachers, students, and other professionals working in the educational field.</p>
           <a href="https://invis.io/G2T2QT4JREC#/374168546_Homepage_-_Sign_Up_Desktop_-_Option_1" class="button">View Prototype</a>
         </div>
         <div class="hero-grid-right">
@@ -75,22 +78,25 @@
       </section>
       <div class="sub-container">
         <section class="summary">
-          <div class="grid-left">
-            <h1>Challenge</h1>
-            <p>Lesson plans, projects, new academic standards--the modern educator has an ever increasing workload and it can be easy to feel overwhelmed and disorganized. Working together with colleagues provides enormous benefits for both students
-              and
-              teachers but finding the time to do so is often challenging. Today’s educators need an easy way to stay organized and to collaborate with their colleagues in order to support their students’ academic success.</p>
+          <div id="darkGrayBox">
+            <div class="grid-left">
+              <h1>Challenge</h1>
+              <p>Lesson plans, projects, new academic standards--the modern educator has an ever increasing workload and it can be easy to feel overwhelmed and disorganized. Working together with colleagues provides enormous benefits for both
+                students
+                and
+                teachers but finding the time to do so is often challenging. Today’s educators need an easy way to stay organized and to collaborate with their colleagues in order to support their students’ academic success.</p>
+            </div>
           </div>
-          <div class="grid-right">
-            <h1>Solution</h1>
-            <p>cloudDesk offers a familiar yet unique cloud storage experience where users can upload, create, and organize content. Perfect for busy educators or students, users can quickly and easily find files based on file type or via a
-              convenient
-              search bar. Where cloudDesk really excels however is in collaboration--beyond sharing files and folders, cloudDesk users can also chat directly with their teammates from within the site as well as work together on a collaborative to-do
-              list.
-              Everything's better together!</p>
-          </div>
-          <div class="cloudDeskBreak">
-            <img src="images/cloudDesk/circles.svg" alt="Section Break">
+          <div id="lightGrayBox">
+            <div class="grid-right">
+              <h1>Solution</h1>
+              <p>cloudDesk offers a familiar yet unique cloud storage experience where users can upload, create, and organize content. Perfect for busy educators or students, users can quickly and easily find files based on file type or via a
+                convenient
+                search bar. Where cloudDesk really excels however is in collaboration--beyond sharing files and folders, cloudDesk users can also chat directly with their teammates from within the site as well as work together on a collaborative
+                to-do
+                list.
+                Everything's better together!</p>
+            </div>
           </div>
         </section>
         <section class="process">
@@ -103,7 +109,7 @@
               enhancing collaboration, including the ability to chat and to work on a collaborative to do list.</p>
           </div>
           <div class="statOne">
-            <h2>43%</h2>
+            <h4>43%</h4>
             <p>45% of respondents worked in the education field in some capacity.</p>
           </div>
           <div class="statTwo">
@@ -134,9 +140,6 @@
             <h2>User Flows and Stories</h2>
             <p>Based on the above research I wrote out 52 user stories with 12 high priority stories that reflected the MVP features identified in the user survey analysis. To address all of the high priority user stories. I based much of these user
               flows on Google Drive’s flows in order to leverage conventions my users are used to in order to create an easily understandable design.</p>
-          </div>
-          <div class="cloudDeskBreak">
-            <img src="images/cloudDesk/circles.svg" alt="Section Break">
           </div>
         </section>
         <section class="IA">
@@ -171,9 +174,6 @@
             <p>Test participants also asked for a third column in the dashboard for the folder location of each file and for the dashboard’s side menu to be present on the new document screen. Participants stated that both would help with
               organization
               and orienting themselves within the app.</p>
-          </div>
-          <div class="cloudDeskBreak">
-            <img src="images/cloudDesk/circles.svg" alt="Section Break">
           </div>
         </section>
         <section class="Visual Design">
@@ -250,37 +250,30 @@
               <li>To change “New Document” to “Document Title” to make it clear that that input field is editable</li>
             </ul>
           </div>
-          <div class="cloudDeskBreak">
-            <img src="images/cloudDesk/circles.svg" alt="Section Break">
-          </div>
         </section>
         <section class="conclusion">
-          <div id="conclusionText">
-            <h1>Conclusion</h1>
-            <p class="italic">What Worked?</p>
-            <p>The branding I designed for cloudDesk was quite successful. During usability testing participants responded positively to the branding and often expressed feeling the brand emotions that I was trying to communicate
-              via
-              my design choices. For example, I wanted the cloudDesk brand to feel happy and bright yet calm and relaxed. Users during testing stated that the color choices made them feel “calm” and that the use of circle shapes (on the landing page)
-              had
-              a
-              playful feel. This is exactly how I wanted users to react to the cloudDesk brand.</p>
-            <p class="italic">What Didn’t Work?</p>
-            <p>A major challenge I faced while working on this project was including unique functionality focused on the identified target
-              market. Due to my survey results I had early on identified teachers, students, and anyone else working in the education field as the target market for cloudDesk. However, as the project progressed there wasn’t much about cloudDesk
-              (beyond
-              its
-              branding) that clearly identified it as a product aimed at the education field. I included two collaborative features to address this challenge and to set cloudDesk apart from its competition: a collaborative to-do list and a chat
-              feature.
-              While I do think these features would be of use to teachers and students, I still think more could be done with this project to clearly establish the education field as its target market. If I were to continue working on this problem,
-              my
-              first step would be another round of user research to figure out the features students and teachers would actually want to have in their cloud storage service.</p>
-          </div>
-          <div class="keyTakeaways">
-            <h1>Key Takeaways</h1>
-            <p>This project truly underscored for me the vital importance of user research throughout the design process. Whenever I felt stuck or unsure of how to proceed, a round of preference or usability tests would immediately shed some light
-              and
-              point me in the right direction. Moving forward I hope to conduct even more user research in future projects in order to create truly human-centered designs.</p>
-          </div>
+          <div id="conclusion">
+            <h1 id="conclusionText">Conclusion</h1>
+            <div id="worked">
+              <p class="italic">What Worked?</p>
+              <p>The branding I designed for cloudDesk was quite successful. During usability testing participants responded positively to the branding and often expressed feeling the brand emotions that I was trying to communicate via my design
+                choices. Users during testing stated that the color choices made them feel “calm” and that the use of circle shapes (on the landing page) had a playful feel.
+              </p>
+            </div>
+            <div id="didNotWork">
+              <p class="italic">What Didn’t Work?</p>
+              <p>A major challenge I faced while working on this project was including unique functionality focused on the identified target market. I included two collaborative features to address this and to set cloudDesk apart from its
+                competition:
+                a collaborative to-do list and a chat feature. While I do think these features would be of use to teachers and students, I still think more could be done with this project to clearly establish the education field as its target market.
+              </p>
+            </div>
+            <div id="keytakeaways">
+              <p class="italic">Key Takeaways</p>
+              <p>This project underscored for me the vital importance of user research throughout the design process. Whenever I felt stuck or unsure of how to proceed, a round of preference or usability tests would immediately shed some light and
+                point me in the right direction. Moving forward I hope to conduct even more user research in future projects in order to create truly human-centered designs.
+              </p>
+            </div>
+            </div>
         </section>
       </div>
       <section class="contact">

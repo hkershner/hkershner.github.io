@@ -1,9 +1,9 @@
 .jams-hero-grid {
-    display: grid;
-    grid-row-gap: 5rem;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    margin-bottom: 9rem;
+  display: grid;
+  grid-row-gap: 5rem;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+  margin-bottom: 9rem;
 }
 
 #blocJamsSmall, .blocJamsBreak {
@@ -32,6 +32,12 @@ h6 {
   text-align: center;
 }
 
+.codeContainer {
+  background-color: #D2D2D4;
+  margin-bottom: 9rem;
+  width: 100%;
+  }
+
 pre code {
   font-family: "Crimson Text", serif;
   font-size: 1.4rem;
@@ -40,61 +46,66 @@ pre code {
 
 /* tablets */
 @media (min-width: 675px) {
-
   .jams-hero-grid {
     grid-column-gap: 5rem;
     grid-template-columns: 50% 50%;
     margin-top: 5rem;
-}
-
-#case-study-highlights {
-  width: 50vw;
-}
-
-.blocJamsBreak {
-  margin-bottom: 9rem;
-  margin-top: 9rem;
-}
-
-h6 {
-  font-size: 1.8rem;
-}
-
-.keyTakeaways {
-  grid-column-start: 2;
-  margin-top: 9rem;
-}
-
-}
-
-  /*laptops & desktops */
-  @media (min-width: 991px) {
-    #blocJamsSmall, .blocJamsBreak {
-      display: none;
-    }
-
-    #blocJamsLarge {
-      display: flex;
-      width: 100%;
-    }
-
-    .userStories {
-    grid-template-columns: 30% 30% 30%;
-    }
-
-    #storiesText {
-      grid-column-end: 3;
-    }
-
-    #storyOne, #storyTwo, #storyThree {
-      grid-row-start: 2;
-    }
-
-    #storyTwo {
-      grid-column-start: 2;
-    }
-
-    #storyThree {
-      grid-column-start: 3;
-    }
   }
+
+  #case-study-highlights {
+    width: 50vw;
+  }
+
+  .blocJamsBreak {
+    margin-bottom: 9rem;
+    margin-top: 9rem;
+  }
+
+  h6 {
+    font-size: 1.8rem;
+  }
+
+  .codeContainer {
+    width: 70vw;
+  }
+}
+
+/*laptops & desktops */
+@media (min-width: 991px) {
+  #blocJamsSmall, .blocJamsBreak {
+    display: none;
+  }
+
+  #blocJamsLarge {
+    display: flex;
+    width: 100%;
+  }
+
+  .userStories {
+    grid-template-columns: 30% 30% 30%;
+  }
+
+  #storiesText {
+    grid-column-end: 3;
+  }
+
+  #storyOne, #storyTwo, #storyThree {
+    grid-row-start: 2;
+  }
+
+  #storyTwo {
+    grid-column-start: 2;
+  }
+
+  #storyThree {
+    grid-column-start: 3;
+  }
+
+  .codeContainer {
+    width: 50vw;
+  }
+
+  .conclusion {
+    margin-bottom: 9rem;
+  }
+}

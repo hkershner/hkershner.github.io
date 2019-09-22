@@ -15,6 +15,8 @@
     gtag('config', 'UA-147969661-1');
   </script>
 
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
   <title>Portfolio | Heidi Kershner</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Reset -->
@@ -91,12 +93,12 @@
         </section>
 
         <section class="process">
-          <div class="userStories">
             <div class="storiesIntro">
             <h1>Process</h1>
             <h2>User Stories</h2>
             <p id="storiesText">I began this project with three main user stories. These user stories directed my work and I referred back to them constantly in order to make sure that what I was creating would deliver the intended value to users.</p>
           </div>
+          <div class="userStories">
           <div id="storyOne">
             <h6>As a listener, I want to see basic information about the album so that I can decide whether I'm interested in it or not.</h6>
           </div>
@@ -112,7 +114,7 @@
             <p>The first step in this process was to analyze the existing code given to me by Bloc.io. Then, to address the first user story, I needed to add the following in order to display basic information about the curently playing album:</p>
           </div>
           <div class="codeContainer">
-            <pre>
+            <pre class="prettyprint">
               <code>
                 {
                   $('#album-title').text(album.title);
@@ -128,7 +130,7 @@
             <p>My second user story was: As a listener, I want to see the album's songs and play/pause songs by clicking on them so that I can change tracks. To address this user story I added the following jQuery code to the project:</p>
           </div>
           <div class="codeContainer">
-            <pre>
+            <pre class="prettyprint">
             <code>
               {
                 album.songs.forEach((song, index) => {
@@ -162,7 +164,7 @@
             <p>To satisfy the last user story and to provide the user with a set of standard music controls (play, pause, previous, next, & slider bar controls) I added the following jQuery code:</p>
           </div>
           <div class="codeContainer">
-            <pre>
+            <pre class="prettyprint">
               <code>
                 {
                   $('button#play-pause').on('click', function() {
@@ -217,6 +219,7 @@
         <section class="conclusion">
           <div id="conclusionText">
             <h1>Conclusion</h1>
+            </div>
               <div class="keyTakeaways">
               <h1>Key Takeaways</h1>
               <p>This was a challenging project that introduced me to jQuery. Building the Bloc Jams music player pushed me to draw on my working knowledge of JavaScript in order to translate vanilla JS into jQuery. Ultimately, this project helped me
