@@ -4,6 +4,7 @@
 
 #yapperHero {
   margin: auto;
+  padding-left: 4rem;
   padding-top: 9rem;
 }
 
@@ -24,9 +25,17 @@
   grid-gap: 5rem;
 }
 
-#moodboard {
+#wireframesDesktop {
+  display: none;
+}
+
+#wordWebs {
   margin-bottom: 5rem;
   margin-left: -3rem;
+}
+
+#wordWebsDesktop {
+  display: none;
 }
 
 #brandColors {
@@ -35,9 +44,8 @@
   align-items: center;
 }
 
-#logoSketches {
-  display: grid;
-  margin-left: -3rem;
+#yapperLogosDesktop {
+  display: none;
 }
 
 /* tablets */
@@ -57,7 +65,7 @@
     padding-left: 5rem;
   }
 
-  #moodboard {
+  #wordWebs {
     margin: 0;
     width: 100%;
   }
@@ -67,30 +75,40 @@
   }
 
   #mockupMobile {
-    display: none;
+    margin-bottom: 9rem;
+    margin-left: 9rem;
+    width: 70%;
   }
 
-  #mockupLarge {
-    display: grid;
-  }
 }
 
   /*laptops & desktops */
   @media (min-width: 991px) {
-    #userFlows {
-      display: none;
+    .process, .visualDesignGrid {
+      margin-bottom: 20rem;
     }
 
-    #userFlowDesktop {
+    #userFlowDesktop, #yapperLogosDesktop {
+      bottom: 15rem;
       display: flex;
+      float: right;
+      margin-left: 5rem;
+      margin-right: -10rem;
+      position: relative;
+      width: 60%;
     }
 
     .wireframes {
-      grid-template-columns: 30% 30% 30%;
+      grid-template-columns: 50% 50%;
     }
 
-    #colorMobile {
-      display: none;
+    #wireframesDesktop, .option1, .option2 {
+      display: flex;
+    }
+
+    #wordWebsDesktop {
+      display: flex;
+      width: 90%;
     }
 
     #colorLarge {
@@ -106,48 +124,41 @@
       margin-left: 3rem;
     }
 
-    #logoSketches {
-      grid-template-columns: 50% 50%;
+    #mockupLayered, #mockupMobile, #colorMobile, #wordWebs, #userFlows, #yapperLogos, #wireframesMobile {
+      display: none;
     }
 
-    #mockupLayered {
-      display: none;
+    #mockupLarge {
+      display: grid;
+    }
+
+    .testing {
+      margin-top: 9rem;
     }
 
     .prefTests {
       display: grid;
-      grid-gap: 20rem;
-      grid-template-columns: 0% 20% 20% 20%;
-      margin-bottom: 5rem;
-    }
-
-    .prefTestsTabs {
-      display: grid;
       grid-gap: 10rem;
-      grid-template-columns: 0 40% 40%;
+      grid-template-columns: 50% 50%;
       margin-bottom: 5rem;
     }
 
-    .option1, .option2 {
-      display: flex;
-    }
-
-    .option1, #tab1 {
-      grid-column-start: 2;
-    }
-
-    .option2, #tab2 {
-      grid-column-start: 3;
-    }
-
-    #tab1, #tab2, #mockupLarge {
+    #tab1, #tab2 {
       width: auto;
+    }
+
+    #mockupLarge {
+      width: 90%;
     }
 
     #finalTests {
       display: grid;
-      grid-gap: 10rem;
+      grid-gap: 5rem;
       grid-template-columns: 30% 30% 30%;
       margin-bottom: 5rem;
+    }
+
+    .conclusion {
+      grid-column-gap: 6rem;
     }
   }
