@@ -1,0 +1,153 @@
+#yapperHeroLarge, #userFlowDesktop, #mockupLarge, #colorLarge, .option1, .option2 {
+  display: none;
+}
+
+#yapperHero {
+  margin: auto;
+  padding-top: 9rem;
+}
+
+.summary, .process {
+  padding-top: 16rem;
+}
+
+.caseStudyPic {
+  margin-bottom: 4rem;
+}
+
+#userFlows {
+  margin-bottom: 5rem;
+}
+
+.wireframes {
+  display: grid;
+  grid-gap: 5rem;
+}
+
+#moodboard {
+  margin-bottom: 5rem;
+  margin-left: -3rem;
+}
+
+#brandColors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logoSketches {
+  display: grid;
+  margin-left: -3rem;
+}
+
+/* tablets */
+@media (min-width: 575px) {
+  #yapperHeroLarge {
+    display: flex;
+    margin: auto;
+    padding-top: 9rem;
+  }
+
+  #yapperHero {
+    display: none;
+  }
+
+  .caption_left {
+    margin-left: -9rem;
+    padding-left: 5rem;
+  }
+
+  #moodboard {
+    margin: 0;
+    width: 100%;
+  }
+
+  #yapperLogos {
+    width: 100%;
+  }
+
+  #mockupMobile {
+    display: none;
+  }
+
+  #mockupLarge {
+    display: grid;
+  }
+}
+
+  /*laptops & desktops */
+  @media (min-width: 991px) {
+    #userFlows {
+      display: none;
+    }
+
+    #userFlowDesktop {
+      display: flex;
+    }
+
+    .wireframes {
+      grid-template-columns: 30% 30% 30%;
+    }
+
+    #colorMobile {
+      display: none;
+    }
+
+    #colorLarge {
+      display: flex;
+      padding-bottom: 3rem;
+    }
+
+    .colorPalette {
+      padding-right: 10rem;
+    }
+
+    #paletteText {
+      margin-left: 3rem;
+    }
+
+    #logoSketches {
+      grid-template-columns: 50% 50%;
+    }
+
+    #mockupLayered {
+      display: none;
+    }
+
+    .prefTests {
+      display: grid;
+      grid-gap: 20rem;
+      grid-template-columns: 0% 20% 20% 20%;
+      margin-bottom: 5rem;
+    }
+
+    .prefTestsTabs {
+      display: grid;
+      grid-gap: 10rem;
+      grid-template-columns: 0 40% 40%;
+      margin-bottom: 5rem;
+    }
+
+    .option1, .option2 {
+      display: flex;
+    }
+
+    .option1, #tab1 {
+      grid-column-start: 2;
+    }
+
+    .option2, #tab2 {
+      grid-column-start: 3;
+    }
+
+    #tab1, #tab2, #mockupLarge {
+      width: auto;
+    }
+
+    #finalTests {
+      display: grid;
+      grid-gap: 10rem;
+      grid-template-columns: 30% 30% 30%;
+      margin-bottom: 5rem;
+    }
+  }
