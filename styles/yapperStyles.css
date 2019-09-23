@@ -1,4 +1,4 @@
-#yapperHeroLarge, #userFlowDesktop, #mockupLarge, #colorLarge, .option1, .option2 {
+#yapperHeroLarge, #userFlowDesktop, #mockupLarge, #colorLarge, #wireframesDesktop, #wordWebsDesktop, #yapperLogosDesktop, .option1, .option2 {
   display: none;
 }
 
@@ -16,36 +16,10 @@
   margin-bottom: 4rem;
 }
 
-#userFlows {
-  margin-bottom: 5rem;
-}
-
-.wireframes {
-  display: grid;
-  grid-gap: 5rem;
-}
-
-#wireframesDesktop {
-  display: none;
-}
-
-#wordWebs {
-  margin-bottom: 5rem;
-  margin-left: -3rem;
-}
-
-#wordWebsDesktop {
-  display: none;
-}
-
 #brandColors {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#yapperLogosDesktop {
-  display: none;
 }
 
 /* tablets */
@@ -80,85 +54,64 @@
     width: 70%;
   }
 
+/*laptops & desktops */
+@media (min-width: 991px) {
+  .process, .visualDesignGrid {
+    margin-bottom: 20rem;
+  }
+
+  #colorLarge {
+    display: flex;
+    padding-bottom: 3rem;
+  }
+
+  .colorPalette {
+    padding-right: 10rem;
+  }
+
+  #paletteText {
+    margin-left: 3rem;
+  }
+
+  #mockupLayered, #mockupMobile, #colorMobile, #wordWebs, #userFlows, #yapperLogos, #wireframesMobile {
+    display: none;
+  }
+
+  #userFlowDesktop, #yapperLogosDesktop, #wireframesDesktop, .option1, .option2 {
+    display: flex;
 }
 
-  /*laptops & desktops */
-  @media (min-width: 991px) {
-    .process, .visualDesignGrid {
-      margin-bottom: 20rem;
-    }
-
-    #userFlowDesktop, #yapperLogosDesktop {
-      bottom: 15rem;
-      display: flex;
-      float: right;
-      margin-left: 5rem;
-      margin-right: -10rem;
-      position: relative;
-      width: 60%;
-    }
-
-    .wireframes {
-      grid-template-columns: 50% 50%;
-    }
-
-    #wireframesDesktop, .option1, .option2 {
-      display: flex;
-    }
-
-    #wordWebsDesktop {
-      display: flex;
-      width: 90%;
-    }
-
-    #colorLarge {
-      display: flex;
-      padding-bottom: 3rem;
-    }
-
-    .colorPalette {
-      padding-right: 10rem;
-    }
-
-    #paletteText {
-      margin-left: 3rem;
-    }
-
-    #mockupLayered, #mockupMobile, #colorMobile, #wordWebs, #userFlows, #yapperLogos, #wireframesMobile {
-      display: none;
-    }
-
-    #mockupLarge {
-      display: grid;
-    }
-
-    .testing {
-      margin-top: 9rem;
-    }
-
-    .prefTests {
-      display: grid;
-      grid-gap: 10rem;
-      grid-template-columns: 50% 50%;
-      margin-bottom: 5rem;
-    }
-
-    #tab1, #tab2 {
-      width: auto;
-    }
-
-    #mockupLarge {
-      width: 90%;
-    }
-
-    #finalTests {
-      display: grid;
-      grid-gap: 5rem;
-      grid-template-columns: 30% 30% 30%;
-      margin-bottom: 5rem;
-    }
-
-    .conclusion {
-      grid-column-gap: 6rem;
-    }
+  #mockupLarge {
+    display: grid;
   }
+
+  .testing {
+    margin-top: 9rem;
+  }
+
+  .prefTests {
+    display: grid;
+    grid-gap: 10rem;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 5rem;
+  }
+
+  #tab1, #tab2 {
+    width: auto;
+  }
+
+  #mockupLarge {
+    width: 90%;
+  }
+
+  #finalTests {
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: 30% 30% 30%;
+    margin-bottom: 5rem;
+  }
+
+  .conclusion {
+    grid-column-gap: 6rem;
+  }
+}

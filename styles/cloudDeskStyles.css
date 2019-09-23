@@ -1,37 +1,23 @@
-#userFlows {
-  margin-left: -3rem
+#cloudHeroSmall {
+  margin-top: 9rem;
+  width: 95%;
 }
 
-#userFlowDesktop {
+#cloudHero, #usabilityImagesDesktop, #userFlowDesktop, #wordWebsDesktop, #logoSketchesDesktop {
   display: none;
-}
-
-#wireframeLeft, #wireframeRight, #logInWireframe {
-  display: block;
-  margin: auto;
-  padding: 2rem;
-  width: 100%;
-}
-
-#wireframeLeft {
-  margin-bottom: 7rem;
-}
-
-#twoFactorAuth {
-  width: 100%;
-}
-
-#chat {
-  padding-top: 2rem;
-}
-
-#newDoc {
-  padding-top: 2rem;
-  width: 100%;
 }
 
 #cloudLogos {
   padding-bottom: 3rem;
+}
+
+#wireframesMobile {
+  margin-bottom: 10rem;
+  width: 95%;
+}
+
+#usabilityImages {
+  margin-left: -3rem;
 }
 
 /* tablets */
@@ -40,15 +26,11 @@
     margin-top: 9rem;
   }
 
-  .cloudDeskBreak {
-    text-align: center;
+  .process {
+    margin-top: 9rem;
   }
 
-  .statOne, .statTwo, .statThree {
-    text-align: center;
-  }
-
-  #userFlows {
+  #userFlows, #logoSketches, #usabilityImages, #wireframesMobile, #wordWebs {
     display: none;
   }
 
@@ -59,17 +41,16 @@
     width: 85vw;
   }
 
-  .wireframes {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 100%;
-    margin-bottom: 9rem;
+  #logoSketchesDesktop, #usabilityImagesDesktop, #wireframesDesktop, #wordWebsDesktop {
+    display: flex;
   }
 
-  #wireframeLeft, #wireframeRight, #logInWireframe {
-    margin: 0;
-    padding: 0;
-    width: 50vw;
+  #wireframesDesktop, #usabilityImagesDesktop {
+    width: 100%;
+  }
+
+  #wireframesDesktop {
+    margin-bottom: 15rem;
   }
 
   .colorPalette {
@@ -92,52 +73,40 @@
     width: 100%;
   }
 
+  .process {
+    padding-bottom: 9rem;
+  }
+
   #userFlowDesktop {
-    width: 80vw;
-  }
-
-  #wireframeLeft, #wireframeRight, #logInWireframe {
-    width: 20vw;
-  }
-
-  #twoFactorAuth {
-    float: right;
-    width: 60%;
+    margin-right: -40rem;
+    width: 70rem;
   }
 
   .cloudCaseStudyPic {
     width: 60%;
   }
 
-  /*Collaborative Features Wireframes*/
-  #chat {
-    float: right;
-    margin-right: 10rem;
-    width: 70%;
+  #userInsights {
+    bottom: 5rem;
+    position: relative;
   }
 
-  #collabCaption {
-    margin-bottom: 10rem;
-    margin-top: 40rem;
+  #centered, #centered2 {
+    text-align: center;
   }
 
-  #newDoc {
+  #centered2 {
+    margin-left: 24rem;
     width: 60%;
   }
 
-  /*Other Elements Wireframes*/
-  #dashboard {
-    float: right;
-  }
-
-  #newDoc {
-    margin-left: -4rem;
-  }
-
   /*Visual Design*/
-  #cloudMoodboard {
-    float: right;
-    width: 80%;
+  .VisualDesign {
+    padding-top: 0;
+  }
+
+  .visualDesignGrid {
+    margin-bottom: 20rem;
   }
 
   #cloudPalette {
@@ -147,13 +116,6 @@
 
   .colorPalette {
     margin-left: 5rem;
-  }
-
-  #cloudLogos {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60vw;
   }
 
   #logoDesign {

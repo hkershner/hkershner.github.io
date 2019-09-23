@@ -159,15 +159,6 @@ section {
   width: 100%;
 }
 
-#cloudHeroSmall {
-  margin-top: 9rem;
-  width: 95%;
-}
-
-#cloudHero {
-  display: none;
-}
-
 .button {
   background: #2F8B8B;
   border: none;
@@ -215,11 +206,16 @@ section {
   padding-bottom: 4rem;
 }
 
+.statOne, .statTwo, .statThree {
+  text-align: center;
+}
+
 .callout {
   background: #2D6086;
   bottom: 3rem;
   color: #ffff;
   margin: -3rem;
+  margin-bottom: 9rem;
   width: 100vw;
 }
 
@@ -231,23 +227,26 @@ section {
   width: 90%;
 }
 
-.calloutTextLeft {
+.calloutText {
   padding-left: 4rem;
   width: 90%;
 }
 
-.caption_right {
-  background: #2D6086;
-  border-radius: 3rem 0 0 3rem;
-  bottom: 3rem;
-  color: #ffff;
+#wireframesDesktop {
+  display: none;
+}
+
+#userFlows, #yapperLogos, #wordwebs {
+  width: 100%;
+}
+
+.wireframes {
+  display: grid;
+  grid-gap: 5rem;
+}
+
+#wordWebs {
   margin-bottom: 5rem;
-  margin-left: -3rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 7rem;
-  position: relative;
-  width: 100vw;
 }
 
 .visualDesignGrid {
@@ -321,10 +320,6 @@ li {
   padding-right: 8rem;
 }
 
-/*footer {
-  position: absolute;
-  height: 2.5rem;
-}*/
 footer {
   background-color: #1E425D;
   background-image: url(/images/FooterDetail.svg);
@@ -389,29 +384,9 @@ footer {
     margin-right: 10rem;
   }
 
-  .caseStudyPic {
-    border-radius: 2rem 2rem 2rem 2rem;
-  }
-
   .label {
     bottom: 6.5rem;
-    border-radius: 0 0 2rem 2rem;
     padding: 2rem;
-  }
-
-  .labelSmall {
-    border-radius: 0 0 2rem 2rem;
-  }
-
-  .project-grid {
-    display: grid;
-    grid-gap: 2rem;
-    align-items: baseline;
-    grid-column-gap: 4rem;
-  }
-
-  .grid-primary {
-    grid-column: span 2;
   }
 
   /*About Page*/
@@ -464,15 +439,9 @@ footer {
     padding-top: 7rem;
   }
 
-  .calloutTextLeft {
+  .calloutText {
     margin-left: 5rem;
     width: 70%;
-  }
-
-  .caption_right {
-    float: right;
-    margin-right: -15rem;
-    width: 50vw;
   }
 
   #conclusion {
@@ -503,11 +472,22 @@ footer {
   }
 
   .project-grid {
-    display: grid;
-    grid-template-columns: 65% 23%;
     align-items: center;
-    grid-column-gap: 10rem;
-  }
+    display: grid;
+    grid-column-gap: 5rem;
+    grid-row-gap: 6rem;
+    grid-template-columns: 60% 30%;
+    grid-template-rows: 30% 30%;
+    margin-top: 5rem;
+    }
+
+    .grid-primary {
+      grid-row: span 2;
+    }
+
+    .project_card2, .project_card3 {
+      grid-column-start: 2;
+    }
 
   .container {
     margin-left: 14rem;
@@ -526,11 +506,6 @@ footer {
   .right {
     width: 50%;
     display: inline-block;
-  }
-
-  .grid-primary {
-    grid-column: auto;
-    grid-row: span 2;
   }
 
   .p3 {
@@ -582,21 +557,25 @@ footer {
     margin-right: -9rem;
   }
 
-  .process {
-    clear: both;
+  #researchStats {
+    bottom: 35rem;
+    display: inline;
+    float: right;
+    position: relative;
+    width: 30%
+  }
+
+  .userResearch {
+    width: 50%;
+  }
+
+  #researchAnalysis {
     display: grid;
-    grid-column-gap: 30rem;
-    grid-template-columns: 40% 30%;
-    grid-template-rows: auto auto;
-    grid-row-gap: 5rem;
+    grid-template-columns: 70%;
   }
 
-  .statTwo, .statThree {
-    grid-column-start: 2;
-    text-align: center;
-  }
-
-  .statOne {
+  .statOne, .statTwo, .statThree {
+    margin-bottom: 5rem;
     text-align: center;
   }
 
@@ -615,20 +594,31 @@ footer {
     margin-right: -9rem;
   }
 
-  .calloutTitle {
-  }
-
-  .calloutTextLeft {
+  .calloutText {
     width: 40%;
   }
 
-  .caption_right {
+  .wireframes {
+    grid-template-columns: 50% 50%;
+  }
+
+  #wireframesDesktop, .option1, .option2 {
+    display: flex;
+  }
+
+  #wordWebsDesktop {
+    display: flex;
+    width: 90%;
+  }
+
+  #userFlowDesktop, #yapperLogosDesktop, #logoSketchesDesktop {
     bottom: 15rem;
-    margin-left: 25rem;
-    padding-left: 5rem;
-    padding-right: 10rem;
+    display: flex;
+    float: right;
+    margin-left: 5rem;
+    margin-right: -10rem;
     position: relative;
-    width: 70vw;
+    width: 60%;
   }
 
   /*Visual Design*/
@@ -653,8 +643,8 @@ footer {
 
   #conclusion {
     display: grid;
-    grid-column-gap: 25rem;
-    grid-gap: 10rem;
+    grid-column-gap: 7rem;
+    grid-row-gap: 10rem;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 10% 50%;
     margin-bottom: 15rem;
