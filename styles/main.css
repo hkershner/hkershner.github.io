@@ -151,7 +151,7 @@ section {
   text-decoration: none;
 }
 
-.project_card {
+.project_card2, .project_card3 {
   text-decoration: none;
 }
 
@@ -324,7 +324,7 @@ footer {
   background-color: #1E425D;
   background-image: url(/images/FooterDetail.svg);
   background-size: cover;
-  height: 8rem;
+  height: 12rem;
   width: 100%;
 }
 
