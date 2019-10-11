@@ -57,6 +57,11 @@ p {
   padding-bottom: 7rem;
 }
 
+.pHighlight {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 1.4rem;
+}
+
 .italic {
   font-size: 1.8rem;
   font-style: italic;

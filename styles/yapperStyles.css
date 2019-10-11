@@ -3,8 +3,8 @@
 }
 
 #yapperHero {
+  display: block;
   margin: auto;
-  padding-left: 4rem;
   padding-top: 9rem;
 }
 

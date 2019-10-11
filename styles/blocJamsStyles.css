@@ -68,6 +68,10 @@ pre code {
   .codeContainer {
     width: 70vw;
   }
+
+  #conclusion {
+    grid-template-columns: auto;
+  }
 }
 
 /*laptops & desktops */
