@@ -18,14 +18,14 @@ html, body {
 
 header {
   background-color: #1E425D;
-  height: 12vh;
+  height: 10vh;
   width: 100vw;
 }
 
 .navLink {
   color: #E5E5E5;
   float: right;
-  font-family: "Crimson Text", serif;
+  font-family: "Julius Sans One", sans-serif;
   font-size: 1.7rem;
   padding: 3rem;
   padding-top: 4rem;
@@ -41,6 +41,8 @@ header {
 
 .name {
   display: none;
+  font-family: "Julius Sans One", sans-serif;
+  text-decoration: none;
 }
 
 .container {
@@ -73,6 +75,8 @@ p {
 #heroText {
   font-family: "Crimson Text", serif;
   font-size: 1.8rem;
+  line-height: 150%;
+  margin-right: auto;
   margin-top: .5rem;
 }
 
@@ -152,11 +156,7 @@ section {
   padding-bottom: 8rem;
 }
 
-.primary_card {
-  text-decoration: none;
-}
-
-.project_card2, .project_card3 {
+.project_card {
   text-decoration: none;
 }
 
@@ -327,7 +327,7 @@ li {
 
 footer {
   background-color: #1E425D;
-  background-image: url(/images/FooterDetail.svg);
+  background-image: url(../images/FooterDetail.svg);
   background-size: cover;
   height: 12rem;
   width: 100%;
@@ -336,10 +336,6 @@ footer {
 @media (max-width: 575px) {
   .project-grid, .hero-grid {
     grid-template-columns: auto;
-  }
-
-  .grid-primary {
-    grid-row: span 1;
   }
 }
 
@@ -354,7 +350,7 @@ footer {
     color: #E5E5E5;
     display: inline-flex;
     float: left;
-    font-family: "Crimson Text", serif;
+    font-family: "Julius Sans One", sans-serif;
     font-size: 1.7rem;
     padding: 3rem;
     padding-top: 3.5rem;
@@ -386,7 +382,7 @@ footer {
 
   #heroText {
     font-size: 2.5rem;
-    margin-right: 10rem;
+    margin-right: 30rem;
   }
 
   .label {
@@ -461,7 +457,7 @@ footer {
 /*laptops & desktops */
 @media (min-width: 991px) {
   header {
-    height: 15vh;
+    height: 11vh;
   }
 
   .logo {
@@ -473,26 +469,16 @@ footer {
   }
 
   #heroText {
-    margin-right: 45rem;
+    margin-right: 60rem;
   }
 
   .project-grid {
-    align-items: center;
     display: grid;
-    grid-column-gap: 5rem;
-    grid-row-gap: 6rem;
-    grid-template-columns: 60% 30%;
-    grid-template-rows: 30% 30%;
-    margin-top: 5rem;
-    }
-
-    .grid-primary {
-      grid-row: span 2;
-    }
-
-    .project_card2, .project_card3 {
-      grid-column-start: 2;
-    }
+    grid-column-gap: 10rem;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+  }
 
   .container {
     margin-left: 14rem;
