@@ -18,8 +18,13 @@ html, body {
 
 header {
   background-color: #1E425D;
-  height: 10vh;
+  height: 14vh;
+  padding-top: 2rem;
   width: 100vw;
+}
+
+#navLink {
+  padding-right: 1rem;
 }
 
 .navLink {
@@ -28,7 +33,7 @@ header {
   font-family: "Julius Sans One", sans-serif;
   font-size: 1.7rem;
   padding: 3rem;
-  padding-top: 4rem;
+  padding-top: 3.5rem;
   text-decoration: none;
 }
 
@@ -36,7 +41,6 @@ header {
   display: inline-flex;
   float: left;
   padding-left: 3rem;
-  padding-top: 2rem;
 }
 
 .name {
@@ -456,16 +460,16 @@ footer {
 
 /*laptops & desktops */
 @media (min-width: 991px) {
-  header {
-    height: 11vh;
-  }
+header {
+  height: 18vh;
+}
 
   .logo {
     padding-left: 8rem;
   }
 
-  .navLink {
-    margin-right: 5rem;
+  #navLink {
+    margin-right: 4rem;
   }
 
   #heroText {
