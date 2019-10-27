@@ -253,13 +253,12 @@ section {
 }
 
 /* Style the Image Used to Trigger the Modal */
-#myImg {
-  border-radius: 5px;
+#userFlows {
   cursor: pointer;
   transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+#userFlows:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
