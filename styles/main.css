@@ -7,6 +7,8 @@ html {
 }
 
 html, body {
+  background-image: url(../images/backgroundTexture.png);
+  background-repeat: repeat;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -18,7 +20,7 @@ html, body {
 
 header {
   background-color: #1E425D;
-  height: 14vh;
+  height: 16vh;
   padding-top: 2rem;
   width: 100vw;
 }
@@ -50,7 +52,6 @@ header {
 }
 
 .container {
-  background-color: white;
   padding: 3rem;
 }
 
@@ -104,12 +105,14 @@ h1 {
   font-family: "Julius Sans One", sans-serif;
   font-size: 3.2rem;
   padding-bottom: 3rem;
+  text-transform: uppercase;
 }
 
 h2 {
   font-family: "Julius Sans One", sans-serif;
   font-size: 2rem;
   padding-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 /* Case Study Titles */
@@ -461,7 +464,7 @@ footer {
 /*laptops & desktops */
 @media (min-width: 991px) {
 header {
-  height: 18vh;
+  height: 20vh;
 }
 
   .logo {
