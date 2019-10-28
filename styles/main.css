@@ -125,19 +125,6 @@ h3 {
   padding-bottom: 2rem;
 }
 
-/*Summary Section Styling*/
-#darkGrayBox {
-  background-color: #E5E5E5;
-  margin: -3rem;
-  padding: 5rem;
-}
-
-#lightGrayBox {
-  background-color: #F8F4F4;
-  margin: -3rem;
-  padding: 5rem;
-}
-
 /* User Survey Percentages or Highlights */
 h4 {
   font-family: "Julius Sans One", sans-serif;
@@ -416,7 +403,6 @@ footer {
 /* tablets */
 @media (min-width: 575px) {
   .container {
-    margin-left: 5rem;
     margin-right: 5rem;
   }
 
@@ -477,6 +463,11 @@ footer {
   }
 
   /*Case Study Pages*/
+  .hero-grid-left {
+    margin-right: 40rem;
+    margin-top: 4rem;
+  }
+
   #case-study-highlights {
     margin-left: -10rem;
   }
@@ -489,16 +480,6 @@ footer {
   .summary {
     clear: both;
     display: grid;
-  }
-
-  .grid-left, .grid-right {
-    margin: auto;
-    width: 70%;
-  }
-
-  #darkGrayBox, #lightGrayBox {
-    margin-left: -9rem;
-    margin-right: -9rem;
   }
 
   .callout {
@@ -555,7 +536,7 @@ header {
   }
 
   .container {
-    margin-left: 14rem;
+    margin-left: 9rem;
     padding-left: 0;
   }
 
@@ -598,20 +579,20 @@ header {
   .hero-grid-left {
     float: left;
     width: 50%;
+    margin-right: auto;
     padding-right: 10rem;
-    padding-top: 5rem;
+    padding-top: 10rem;
   }
 
   .hero-grid-right {
     float: right;
-    margin-top: 6rem;
   }
 
   .highlights {
     float: left;
     margin-left: -11rem;
     padding-top: 9rem;
-    width: 35%;
+    width: 45%;
   }
 
   .r-d-t {
@@ -619,33 +600,29 @@ header {
   }
 
   .summary {
-    grid-column-gap: 25rem;
-    grid-template-columns: 40% 40%;
+    grid-column-gap: 15rem;
+    grid-template-columns: 45% 45%;
     grid-template-rows: auto auto;
     padding-top: 20rem;
     margin-bottom: 9rem;
-  }
-
-  #darkGrayBox, #lightGrayBox {
-    margin-left: -20rem;
-    margin-right: -9rem;
   }
 
   #researchStats {
     bottom: 35rem;
     display: inline;
     float: right;
+    margin-right: 6rem;
     position: relative;
     width: 30%
   }
 
   .userResearch {
-    width: 50%;
+    width: 40%;
   }
 
   #researchAnalysis {
     display: grid;
-    grid-template-columns: 70%;
+    grid-template-columns: 60%;
   }
 
   .statOne, .statTwo, .statThree {
