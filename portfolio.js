@@ -1,9 +1,9 @@
 window.onload = function() {
   // Get the modal
-  var modal = document.getElementById("myModal");
+  var modal = document.getElementById("Modal");
 
   // Get the image and insert it inside the modal
-  var img = document.getElementById("myImg");
+  var img = document.getElementById("userFlows");
   var modalImg = document.getElementById("img01");
   img.onclick = function() {
     modal.style.display = "block";
