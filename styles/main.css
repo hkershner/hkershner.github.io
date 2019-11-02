@@ -47,7 +47,7 @@ header {
 .logo {
   display: inline-flex;
   float: left;
-  padding-left: 2rem;
+  margin-left: 2rem;
 }
 
 .name {
@@ -323,16 +323,10 @@ footer {
   width: 100%;
 }
 
-@media (max-width: 575px) {
-  .project-grid, .hero-grid {
-    grid-template-columns: auto;
-  }
-}
-
 /* tablets */
 @media (min-width: 575px) {
-  .container {
-    margin-right: 5rem;
+  .logo {
+    margin-left: 5rem;
   }
 
   .name {
@@ -369,14 +363,25 @@ footer {
     margin-right: 30rem;
   }
 
+  section {
+    margin: 6rem;
+  }
+
   .label {
     bottom: 6.5rem;
     padding: 2rem;
   }
 
+  .project-grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 5rem;
+    justify-content: center;
+  }
+
   /*About Page*/
   #bioIntro {
-    margin-right: 15rem;
+    margin-right: 30rem;
     margin-top: 7rem;
   }
 
