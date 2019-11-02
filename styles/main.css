@@ -18,6 +18,11 @@ html, body {
   min-height: 100vh;
 }
 
+section {
+  margin: 3rem;
+  padding-top: 8rem;
+}
+
 header {
   background-color: #1E425D;
   height: 16vh;
@@ -42,17 +47,13 @@ header {
 .logo {
   display: inline-flex;
   float: left;
-  padding-left: 3rem;
+  padding-left: 2rem;
 }
 
 .name {
   display: none;
   font-family: "Julius Sans One", sans-serif;
   text-decoration: none;
-}
-
-.container {
-  padding: 3rem;
 }
 
 /* Case Study paragraph text */
@@ -141,10 +142,6 @@ h5 {
   text-align: center;
 }
 
-section {
-  padding-top: 8rem;
-}
-
 .hero {
   line-height: 3rem;
   padding-bottom: 8rem;
@@ -213,7 +210,6 @@ section {
   background: #2D6086;
   bottom: 3rem;
   color: #ffff;
-  margin: -3rem;
   margin-bottom: 9rem;
   width: 100vw;
 }
@@ -236,74 +232,11 @@ section {
 }
 
 #userFlows, #yapperLogos, #wordwebs {
-  width: 100%;
+  width: 100vw;
 }
 
-/* Style the Image Used to Trigger the Modal */
-#userFlows {
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#userFlows:hover {opacity: 0.9;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
+#userflows, #yapperLogos, #logoDesign {
+  margin-left: -3rem;
 }
 
 .wireframes {
@@ -313,10 +246,6 @@ section {
 
 #wordWebs {
   margin-bottom: 5rem;
-}
-
-.visualDesignGrid {
-  display: grid;
 }
 
 .colorPalette {
@@ -482,20 +411,16 @@ footer {
   }
 
   .callout {
-    margin-left: -9rem;
-    margin-right: -9rem;
     margin-bottom: 9rem;
   }
 
   .calloutTitle {
     display: block;
     justify-content: auto;
-    margin-left: 20rem;
     padding-top: 7rem;
   }
 
   .calloutText {
-    margin-left: 16rem;
     width: 33%;
   }
 
@@ -640,8 +565,6 @@ header {
   }
 
   .callout {
-    margin-left: -20rem;
-    margin-right: -9rem;
   }
 
   .calloutText {
@@ -702,7 +625,7 @@ header {
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 10% 50%;
     margin-bottom: 15rem;
-    margin-left: -20rem;
+    margin-left: -15rem;
   }
 
   #conclusionText {
