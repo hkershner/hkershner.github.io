@@ -162,9 +162,10 @@ h5 {
   border-radius: 3rem;
   color: #fff;
   font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
   margin-top: 5rem;
   margin-bottom: 9rem;
-  padding: 1.5rem;
+  padding: 2rem;
   text-decoration: none;
 }
 
@@ -325,10 +326,6 @@ footer {
 
 /* tablets */
 @media (min-width: 575px) {
-  .logo {
-    margin-left: 5rem;
-  }
-
   .name {
     color: #E5E5E5;
     display: inline-flex;
@@ -360,11 +357,7 @@ footer {
   }
 
   #heroText {
-    margin-right: 30rem;
-  }
-
-  section {
-    margin: 6rem;
+    margin-right: 20rem;
   }
 
   .label {
@@ -377,6 +370,10 @@ footer {
     grid-template-columns: 40% 40%;
     grid-gap: 5rem;
     justify-content: center;
+  }
+
+  .projectPic {
+    width: 100%;
   }
 
   /*About Page*/
@@ -397,7 +394,6 @@ footer {
 
   /*Case Study Pages*/
   .hero-grid-left {
-    margin-right: 40rem;
     margin-top: 4rem;
   }
 
@@ -420,29 +416,37 @@ footer {
   }
 
   .calloutTitle {
-    display: block;
-    justify-content: auto;
+    justify-content: left;
+    margin-left: 6rem;
     padding-top: 7rem;
   }
 
   .calloutText {
-    width: 33%;
+    margin: 2rem;
+  }
+
+  .caseStudyPic {
+    padding: 2rem;
+    width: 50%;
+  }
+
+  .prefTests, #finalTests {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #conclusion {
-    margin-left: -8rem;
-    margin-right: -9rem;
     padding-left: 10rem;
     padding-right: 10rem;
-    width: 100vw;
   }
 }
 
 /*laptops & desktops */
 @media (min-width: 991px) {
-header {
-  height: 26vh;
-}
+  header {
+    height: 26vh;
+  }
 
   .logo {
     padding-left: 8rem;
@@ -569,8 +573,7 @@ header {
     grid-row-start: 3;
   }
 
-  .callout {
-  }
+  .callout {}
 
   .calloutText {
     width: 40%;

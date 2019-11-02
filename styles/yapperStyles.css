@@ -39,19 +39,33 @@
     padding-left: 5rem;
   }
 
+  #userFlows {
+    display: none;
+  }
+
+  #userFlowDesktop {
+    display: flex;
+    width: 100%;
+  }
+
+  #wireframesMobile {
+    margin-left: 9rem;
+    width: 70%;
+  }
+
   #wordWebs {
     margin: 0;
     width: 100%;
   }
 
   #yapperLogos {
+    margin: auto;
     width: 100%;
   }
 
   #mockupMobile {
     margin-bottom: 9rem;
-    margin-left: 9rem;
-    width: 70%;
+    width: 30%;
   }
 
 /*laptops & desktops */
@@ -73,11 +87,11 @@
     margin-left: 3rem;
   }
 
-  #mockupLayered, #mockupMobile, #colorMobile, #wordWebs, #userFlows, #yapperLogos, #wireframesMobile {
+  #mockupLayered, #mockupMobile, #colorMobile, #wordWebs, #yapperLogos, #wireframesMobile {
     display: none;
   }
 
-  #userFlowDesktop, #yapperLogosDesktop, #wireframesDesktop, .option1, .option2 {
+  #yapperLogosDesktop, #wireframesDesktop, .option1, .option2 {
     display: flex;
 }
 
