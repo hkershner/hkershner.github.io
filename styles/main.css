@@ -308,7 +308,7 @@ section {
 
 .wireframes {
   display: grid;
-  grid-gap: 5rem;
+  grid-gap: 10rem;
 }
 
 #wordWebs {
@@ -437,7 +437,6 @@ footer {
   }
 
   #heroText {
-    font-size: 2.5rem;
     margin-right: 30rem;
   }
 
@@ -491,13 +490,13 @@ footer {
   .calloutTitle {
     display: block;
     justify-content: auto;
-    margin-left: 9rem;
+    margin-left: 20rem;
     padding-top: 7rem;
   }
 
   .calloutText {
-    margin-left: 5rem;
-    width: 70%;
+    margin-left: 16rem;
+    width: 33%;
   }
 
   #conclusion {
@@ -524,7 +523,7 @@ header {
   }
 
   #heroText {
-    margin-right: 60rem;
+    margin-right: 50rem;
   }
 
   .project-grid {
@@ -564,7 +563,7 @@ header {
   }
 
   #bioIntro, #bioText {
-    margin-right: 60rem;
+    margin-right: 50rem;
   }
 
   /*Case Study Screens*/
@@ -650,7 +649,7 @@ header {
   }
 
   .wireframes {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 50%;
   }
 
   #wireframesDesktop, .option1, .option2 {
@@ -689,6 +688,11 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 50rem;
+  }
+
+  .testingText {
+    margin: auto;
+    width: 60%;
   }
 
   #conclusion {

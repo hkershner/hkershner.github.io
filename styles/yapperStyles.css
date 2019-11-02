@@ -91,13 +91,13 @@
 
   .prefTests {
     display: grid;
-    grid-gap: 10rem;
     grid-template-columns: 50% 50%;
+    justify-items: center;
     margin-bottom: 5rem;
   }
 
-  #tab1, #tab2 {
-    width: auto;
+  .option1, .option2, #tab1, #tab2 {
+    width: 75%;
   }
 
   #mockupLarge {
@@ -109,6 +109,10 @@
     grid-gap: 5rem;
     grid-template-columns: 30% 30% 30%;
     margin-bottom: 5rem;
+  }
+
+  #testingIntro, #finalTestText {
+    width: 50%;
   }
 
   .conclusion {
