@@ -332,6 +332,7 @@ footer {
     float: left;
     font-family: "Julius Sans One", sans-serif;
     font-size: 1.7rem;
+    letter-spacing: 1.5px;
     padding: 3rem;
     padding-top: 3.5rem;
   }
@@ -449,32 +450,26 @@ footer {
   }
 
   .logo {
-    padding-left: 8rem;
+    margin-left: 5rem;
   }
 
   #navLink {
     margin-right: 4rem;
   }
 
+  section {
+    margin: 6rem;
+  }
+
   #heroText {
-    margin-right: 50rem;
+    width: 40%;
   }
 
   .project-grid {
     display: grid;
     grid-column-gap: 10rem;
     grid-template-columns: 40% 40%;
-    justify-content: space-evenly;
     margin-top: 8rem;
-  }
-
-  .container {
-    margin-left: 9rem;
-    padding-left: 0;
-  }
-
-  .sub-container {
-    margin: 5rem;
   }
 
   .left {
@@ -492,12 +487,8 @@ footer {
   }
 
   /*Bio Styles*/
-  #profilePic {
-    margin-right: 10rem;
-  }
-
   #bioIntro, #bioText {
-    margin-right: 50rem;
+    width: 50%;
   }
 
   /*Case Study Screens*/
