@@ -7,7 +7,7 @@ html {
 }
 
 html, body {
-  background-image: url(../images/backgroundTexture.png);
+  /* background-image: url(../images/backgroundTexture.png); */
   background-repeat: repeat;
   max-width: 100%;
   overflow-x: hidden;
@@ -512,7 +512,7 @@ footer {
 /*laptops & desktops */
 @media (min-width: 991px) {
 header {
-  height: 20vh;
+  height: 26vh;
 }
 
   .logo {
@@ -666,8 +666,7 @@ header {
     bottom: 15rem;
     display: flex;
     float: right;
-    margin-left: 5rem;
-    margin-right: -10rem;
+    margin-right: -5rem;
     position: relative;
     width: 60%;
   }
