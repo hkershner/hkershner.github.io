@@ -74,7 +74,7 @@
     position: absolute;
   }
 
-  #userFlowDesktop {
+  #userFlowDesktop, #yapperLogosDesktop {
     margin: 2rem;
     width: 50%;
   }
@@ -102,6 +102,7 @@
 
   .logoSketches {
     position: absolute;
+    width: 100%;
   }
 
   #mockupLarge {

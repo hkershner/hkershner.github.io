@@ -236,10 +236,6 @@ h5 {
   width: 100vw;
 }
 
-#userflows, #yapperLogos, #logoDesign {
-  margin-left: -3rem;
-}
-
 .wireframes {
   display: grid;
   grid-gap: 10rem;
@@ -274,7 +270,6 @@ li {
   bottom: 3rem;
   color: #ffff;
   margin-bottom: 5rem;
-  margin-left: -3rem;
   padding-left: 3rem;
   padding-right: 3rem;
   text-align: center;
@@ -607,35 +602,21 @@ footer {
 
   .testingText {
     margin: auto;
+    text-align: center;
     width: 60%;
   }
 
-  #conclusion {
-    display: grid;
-    grid-column-gap: 7rem;
-    grid-row-gap: 10rem;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 10% 50%;
-    margin-bottom: 15rem;
-    margin-left: -15rem;
-  }
-
-  #conclusionText {
-    grid-column-start: 2;
+  #worked, #didNotWork, #keytakeaways {
+    display: inline-block;
+    margin-right: 3rem;
+    width: 30%;
   }
 
   #worked {
-    grid-column-start: 1;
-    grid-row-start: 2;
-  }
-
-  #didNotWork {
-    grid-column-start: 2;
-    grid-row-start: 2;
+    float: left;
   }
 
   #keytakeaways {
-    grid-column-start: 3;
-    grid-row-start: 2;
+    float: right;
   }
 }
