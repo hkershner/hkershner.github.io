@@ -7,8 +7,6 @@ html {
 }
 
 html, body {
-  /* background-image: url(../images/backgroundTexture.png); */
-  background-repeat: repeat;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -74,7 +72,6 @@ p {
   font-size: 1.8rem;
   font-style: italic;
   padding-bottom: 2rem;
-  text-align: center;
 }
 
 /* Landing page paragraph text */
@@ -151,7 +148,7 @@ h5 {
   text-decoration: none;
 }
 
-.caseStudyPic, .cloudCaseStudyPic {
+.caseStudyPic, .cloudCaseStudyPic, .projectPic {
   width: 100%;
 }
 
@@ -207,7 +204,7 @@ h5 {
   text-align: center;
 }
 
-.callout {
+.callout, #centeredCallout {
   background: #2D6086;
   bottom: 3rem;
   color: #ffff;
@@ -215,7 +212,7 @@ h5 {
   width: 100vw;
 }
 
-.calloutTitle {
+.calloutTitle, #centeredCalloutTitle {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -223,7 +220,7 @@ h5 {
   width: 90%;
 }
 
-.calloutText {
+.calloutText, #centeredCalloutText {
   padding-left: 4rem;
   width: 90%;
 }
@@ -265,6 +262,10 @@ li {
   padding-bottom: 2rem;
 }
 
+.testingText, #finalTestingResults, #conclusion {
+  margin-bottom: 12rem;
+}
+
 #conclusion {
   background: #1E425D;
   bottom: 3rem;
@@ -272,7 +273,6 @@ li {
   margin-bottom: 5rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  text-align: center;
   width: 100vw;
 }
 
@@ -407,7 +407,7 @@ footer {
     display: grid;
   }
 
-  .callout {
+  .callout, #centeredCallout {
     margin-bottom: 9rem;
   }
 
@@ -416,6 +416,16 @@ footer {
     margin-left: 6rem;
     padding-top: 7rem;
   }
+
+#centeredCalloutTitle, #centeredCalloutText {
+  width: 100%;
+}
+
+#centeredCalloutText {
+  padding-right: 20%;
+  padding-left: 20%;
+  text-align: center;
+}
 
   .calloutText {
     margin: 2rem;
@@ -570,12 +580,12 @@ footer {
   }
 
   #userFlowDesktop, #yapperLogosDesktop, #logoSketchesDesktop {
-    bottom: 15rem;
+    bottom: 3rem;
     display: flex;
     float: right;
     margin-right: -5rem;
     position: relative;
-    width: 60%;
+    width: 70%;
   }
 
   /*Visual Design*/

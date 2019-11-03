@@ -102,20 +102,10 @@
     width: 60%;
   }
 
-  #userInsights {
+  #centeredCallout {
     bottom: 10rem;
     margin: 0;
     position: relative;
-  }
-
-  #centered, #centered2 {
-    justify-content: center;
-    text-align: center;
-  }
-
-  #centered2 {
-    margin-left: 24rem;
-    width: 60%;
   }
 
   /*Visual Design*/
