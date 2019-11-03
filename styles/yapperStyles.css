@@ -8,10 +8,6 @@
   padding-top: 9rem;
 }
 
-.summary {
-  padding-top: 16rem;
-}
-
 .caseStudyPic {
   margin-bottom: 4rem;
 }
@@ -70,8 +66,17 @@
 
 /*laptops & desktops */
 @media (min-width: 991px) {
-  .process, .visualDesignGrid {
-    margin-bottom: 20rem;
+  #yapperHeroLarge {
+    width: 75%;
+  }
+
+  .userFlowsImages {
+    position: absolute;
+  }
+
+  #userFlowDesktop {
+    margin: 2rem;
+    width: 50%;
   }
 
   #colorLarge {
@@ -91,9 +96,13 @@
     display: none;
   }
 
-  #yapperLogosDesktop, #wireframesDesktop, .option1, .option2 {
+  #wordWebsDesktop, #yapperLogosDesktop, #wireframesDesktop, .option1, .option2 {
     display: flex;
 }
+
+  .logoSketches {
+    position: absolute;
+  }
 
   #mockupLarge {
     display: grid;
