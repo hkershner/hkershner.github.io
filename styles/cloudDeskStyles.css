@@ -1,6 +1,11 @@
+.hero-grid-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #cloudHeroSmall {
   margin-top: 9rem;
-  width: 95%;
 }
 
 #cloudHero, #usabilityImagesDesktop, #userFlowDesktop, #wordWebsDesktop, #logoSketchesDesktop {
@@ -30,8 +35,13 @@
     margin-top: 9rem;
   }
 
-  #userFlows, #logoSketches, #usabilityImages, #wireframesMobile, #wordWebs {
+  #cloudHeroSmall, #userFlows, #logoSketches, #usabilityImages, #wireframesMobile, #wordWebs {
     display: none;
+  }
+
+  #cloudHero {
+    display: flex;
+    margin-top: 6rem;
   }
 
   #userFlowDesktop {
@@ -67,18 +77,8 @@
 
 /*laptops & desktops */
 @media (min-width: 991px) {
-  #cloudHeroSmall {
-    display: none;
-  }
-
 .hero-grid-left {
-  margin-top: 0;
-}
-
-  #cloudHero {
-    display: flex;
-    margin-top: 6rem;
-    width: 80%;
+    margin-top: 0;
   }
 
   .process {
