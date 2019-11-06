@@ -16,13 +16,21 @@
   padding-bottom: 3rem;
 }
 
+.wireframes {
+  display: block;
+}
+
 #wireframesMobile {
   margin-bottom: 10rem;
   width: 95%;
 }
 
-#usabilityImages, #userInsights {
+#userInsights {
   margin-left: -3rem;
+}
+
+#prefTestPic {
+  margin-bottom: 5rem;
 }
 
 /* tablets */
@@ -41,13 +49,15 @@
 
   #cloudHero {
     display: flex;
-    margin-top: 6rem;
+    position: relative;
+    bottom: 10rem;
   }
 
   #userFlowDesktop {
     align-items: center;
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 
   #logoSketchesDesktop, #usabilityImagesDesktop, #wireframesDesktop, #wordWebsDesktop {
@@ -94,8 +104,19 @@
   }
 
   #userFlowDesktop, #logoSketchesDesktop {
+    bottom: 20rem;
     margin: 2rem;
     width: 50%;
+  }
+
+  .IA {
+    margin-top: 20rem;
+  }
+
+  .wireframes {
+    display: grid;
+    grid-gap: 10rem;
+    grid-template-columns: 40% 50%;
   }
 
   .cloudCaseStudyPic {
@@ -123,12 +144,17 @@
   }
 
   .colorPalette {
-    margin-left: 5rem;
+    margin-left: 15rem;
   }
 
   #logoDesign {
     margin-bottom: 9rem;
   }
+
+/*Testing*/
+#logoPlacement1, #logoPlacement2 {
+  width: 100%;
+}
 
   #testingIntro {
     width: 40%;
@@ -136,10 +162,14 @@
 
   .testing {
     display: flex;
-    width: 50%;
+    width: 60%;
     justify-content: center;
     align-items: center;
-    margin-left: 30rem;
+    margin: auto
+  }
+
+  #newDocFinal, #dashboardFinal {
+    width: 70%;
   }
 
   #logoPlacement2, #dashboardIcons2, #loginOption2, #newDocFinal {

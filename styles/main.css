@@ -262,7 +262,7 @@ li {
   padding-bottom: 2rem;
 }
 
-.testingText, #finalTestingResults, #conclusion {
+#finalTestingResults, #conclusion {
   margin-bottom: 12rem;
 }
 
@@ -436,7 +436,7 @@ footer {
     width: 50%;
   }
 
-  .prefTests, #finalTests {
+  .prefTests, #finalTests, .cloudPalette {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -466,10 +466,6 @@ footer {
     margin: 6rem;
   }
 
-  #heroText {
-    width: 40%;
-  }
-
   .project-grid {
     display: grid;
     grid-column-gap: 10rem;
@@ -477,12 +473,7 @@ footer {
     margin-top: 8rem;
   }
 
-  .left {
-    width: 50%;
-    display: inline-block;
-  }
-
-  .right {
+  .left, .right {
     width: 50%;
     display: inline-block;
   }
@@ -534,10 +525,6 @@ footer {
     width: 30%
   }
 
-  .userResearch {
-    width: 40%;
-  }
-
   #researchAnalysis {
     display: grid;
     grid-template-columns: 60%;
@@ -558,7 +545,7 @@ footer {
     grid-row-start: 3;
   }
 
-  .calloutText {
+  .calloutText, .testingText, .userResearch, #heroText {
     width: 40%;
   }
 
@@ -610,10 +597,8 @@ footer {
     width: 50rem;
   }
 
-  .testingText {
-    margin: auto;
-    text-align: center;
-    width: 60%;
+  #prefTestPic {
+    margin: 5rem;
   }
 
   #worked, #didNotWork, #keytakeaways {
