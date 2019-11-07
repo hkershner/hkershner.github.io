@@ -1,15 +1,18 @@
-#yapperHeroLarge, #userFlowDesktop, #mockupLarge, #colorLarge, #wireframesDesktop, #wordWebsDesktop, #yapperLogosDesktop, .option1, .option2 {
+#yapperHeroLarge, #userFlowDesktop, #mockupDesktop, #colorLarge, #wireframesDesktop, #wordWebsDesktop, #yapperLogosDesktop, .option1, .option2 {
   display: none;
 }
 
 #yapperHero {
-  display: block;
-  margin: auto;
   padding-top: 9rem;
+  width: 100vw;
 }
 
 .caseStudyPic {
   margin-bottom: 4rem;
+}
+
+#userFlows, #yapperLogos {
+  margin-bottom: 0rem;
 }
 
 #brandColors {
@@ -20,17 +23,7 @@
 
 /* tablets */
 @media (min-width: 575px) {
-  #yapperHeroLarge {
-    display: flex;
-    margin: auto;
-    padding-top: 9rem;
-  }
-
-  #yapperHero {
-    display: none;
-  }
-
-  .caption_left {
+.caption_left {
     margin-left: -9rem;
     padding-left: 5rem;
   }
@@ -41,6 +34,7 @@
 
   #userFlowDesktop {
     display: flex;
+    margin-bottom: 0rem;
     width: 100%;
   }
 
@@ -61,13 +55,15 @@
 
   #mockupMobile {
     margin-bottom: 9rem;
-    width: 30%;
+    padding: 0rem;
+    width: 40%;
   }
 
 /*laptops & desktops */
 @media (min-width: 991px) {
-  #yapperHeroLarge {
-    width: 75%;
+  #yapperHero {
+    padding-top: 2rem;
+    width: 70vw;
   }
 
   .userFlowsImages {
@@ -92,7 +88,7 @@
     margin-left: 3rem;
   }
 
-  #mockupLayered, #mockupMobile, #colorMobile, #wordWebs, #yapperLogos, #wireframesMobile {
+  #mockupMobile, #mockupLayered, #colorMobile, #wordWebs, #yapperLogos, #wireframesMobile {
     display: none;
   }
 
@@ -101,7 +97,7 @@
 }
 
   #yapperLogosDesktop {
-    bottom: 3.5rem;
+    bottom: 10rem;
   }
 
   .logoSketches {
@@ -125,18 +121,13 @@
   }
 
   .option1, .option2, #tab1, #tab2 {
-    width: 75%;
+    width: 50%;
   }
 
-  #mockupLarge {
-    width: 90%;
-  }
-
-  #finalTests {
-    display: grid;
-    grid-gap: 5rem;
-    grid-template-columns: 30% 30% 30%;
+  #finalTests, #mockupDesktop {
+    display: block;
     margin-bottom: 5rem;
+    width: 100%;
   }
 
   #testingIntro, #finalTestText {

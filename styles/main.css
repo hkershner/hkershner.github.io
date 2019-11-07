@@ -184,6 +184,12 @@ h5 {
   margin-top: .5rem;
 }
 
+.hero-grid-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Case Study Highlights */
 #case-study-highlights {
   background: #1E425D;
@@ -482,8 +488,8 @@ footer {
     font-size: 1.8rem;
   }
 
-  /*Bio Styles*/
-  #bioIntro, #bioText {
+  /*Bio paragraphs & case study testing*/
+  #bioIntro, #bioText, .testingText, #finalTestingResults {
     width: 50%;
   }
 
@@ -545,7 +551,7 @@ footer {
     grid-row-start: 3;
   }
 
-  .calloutText, .testingText, .userResearch, #heroText {
+  .calloutText, .userResearch, #heroText {
     width: 40%;
   }
 
@@ -575,6 +581,16 @@ footer {
     width: 70%;
   }
 
+  #userFlowDesktop, #logoSketchesDesktop {
+    bottom: 20rem;
+    margin: 2rem;
+    width: 50%;
+  }
+
+  .IA {
+    margin-top: 20rem;
+  }
+
   /*Visual Design*/
   .visualDesignGrid {
     display: grid;
@@ -588,13 +604,6 @@ footer {
 
   #brandColors {
     grid-column-start: 2;
-  }
-
-  #finalTestingResults {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50rem;
   }
 
   #prefTestPic {
