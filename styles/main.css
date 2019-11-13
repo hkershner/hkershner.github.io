@@ -37,6 +37,7 @@ header {
   float: right;
   font-family: "Julius Sans One", sans-serif;
   font-size: 1.7rem;
+  letter-spacing: 1.5px;
   padding: 3rem;
   padding-top: 3.5rem;
   text-decoration: none;
@@ -56,7 +57,7 @@ header {
 
 /* Case Study paragraph text */
 p {
-  font-family: "Crimson Text", serif;
+  font-family: "Garamond", serif;
   font-size: 1.5rem;
   line-height: 167.2%;
   margin-top: .5rem;
@@ -76,7 +77,7 @@ p {
 
 /* Landing page paragraph text */
 #heroText {
-  font-family: "Crimson Text", serif;
+  font-family: "Garamond", serif;
   font-size: 1.8rem;
   line-height: 150%;
   margin-right: auto;
@@ -86,14 +87,14 @@ p {
 /*Primary & secondary case study label text on landing page */
 .p1, .p3 {
   color: #E5E5E5;
-  font-family: "Crimson Text", serif;
+  font-family: "Garamond", serif;
   font-size: 1.8rem;
   margin-top: .5rem;
 }
 
 /*color palette text */
 .p2 {
-  font-family: "Crimson Text", serif;
+  font-family: "Garamond", serif;
   font-size: 1.5rem;
   line-height: 167.2%;
   padding-bottom: 0;
@@ -156,9 +157,9 @@ h5 {
   background: #2F8B8B;
   border: none;
   box-shadow: 0rem 0rem 0.5rem grey;
-  border-radius: 3rem;
+  border-radius: 2rem;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Julius Sans One", sans-serif;
   font-size: 1.6rem;
   margin-top: 5rem;
   margin-bottom: 9rem;
@@ -179,7 +180,7 @@ h5 {
 /* Case Study titles */
 .casestudy {
   color: #E5E5E5;
-  font-family: "Crimson Text", serif;
+  font-family: "Garamond", serif;
   font-size: 1.8rem;
   margin-top: .5rem;
 }
@@ -262,7 +263,7 @@ ul {
 }
 
 li {
-  font-family: "Crimson Text", serif;
+  font-family: "Garamond", serif;
   font-size: 1.5rem;
   line-height: 167.2%;
   padding-bottom: 2rem;
@@ -526,14 +527,14 @@ footer {
     bottom: 35rem;
     display: inline;
     float: right;
-    margin-right: 6rem;
+    margin-right: 10rem;
     position: relative;
     width: 30%
   }
 
   #researchAnalysis {
     display: grid;
-    grid-template-columns: 60%;
+    grid-template-columns: 70%;
   }
 
   .statOne, .statTwo, .statThree {
@@ -551,8 +552,12 @@ footer {
     grid-row-start: 3;
   }
 
-  .calloutText, .userResearch, #heroText {
+  .calloutText, #heroText {
     width: 40%;
+  }
+
+  .userResearch {
+    width: 45%;
   }
 
   .wireframes {
