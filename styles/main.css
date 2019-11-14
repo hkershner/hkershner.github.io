@@ -56,12 +56,16 @@ header {
 }
 
 /* Case Study paragraph text */
-p {
+p, li {
   font-family: "Garamond", serif;
   font-size: 1.5rem;
   line-height: 167.2%;
   margin-top: .5rem;
-  padding-bottom: 7rem;
+  padding-bottom: 3rem;
+}
+
+p {
+  padding-bottom: 4rem;
 }
 
 .pHighlight {
@@ -262,13 +266,6 @@ ul {
   margin-bottom: 5rem;
 }
 
-li {
-  font-family: "Garamond", serif;
-  font-size: 1.5rem;
-  line-height: 167.2%;
-  padding-bottom: 2rem;
-}
-
 #finalTestingResults, #conclusion {
   margin-bottom: 12rem;
 }
@@ -351,7 +348,7 @@ footer {
     font-size: 2.2rem;
   }
 
-  p {
+  p, li {
     font-size: 1.8rem;
   }
 
@@ -424,15 +421,15 @@ footer {
     padding-top: 7rem;
   }
 
-#centeredCalloutTitle, #centeredCalloutText {
-  width: 100%;
-}
+  #centeredCalloutTitle, #centeredCalloutText {
+    width: 100%;
+  }
 
-#centeredCalloutText {
-  padding-right: 20%;
-  padding-left: 20%;
-  text-align: center;
-}
+  #centeredCalloutText {
+    padding-right: 20%;
+    padding-left: 20%;
+    text-align: center;
+  }
 
   .calloutText {
     margin: 2rem;
@@ -443,7 +440,11 @@ footer {
     width: 50%;
   }
 
-  .prefTests, #finalTests, .cloudPalette {
+  .prefTests {
+    display: grid;
+  }
+
+  #finalTests, .cloudPalette {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -613,6 +614,25 @@ footer {
 
   #prefTestPic {
     margin: 5rem;
+  }
+
+  .prefTests {
+    display: grid;
+    grid-row-gap: 5rem;
+    grid-template-columns: 50% 50% min-content;
+    justify-items: center;
+  }
+
+  .testingText, #finalTestingResults {
+    grid-column: span 2;
+  }
+
+  #testingIntro, #finalTestText {
+    width: 50%;
+  }
+
+  #testingIntro {
+    margin-bottom: 5rem;
   }
 
   #worked, #didNotWork, #keytakeaways {

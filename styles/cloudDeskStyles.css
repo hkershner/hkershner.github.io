@@ -77,11 +77,22 @@
   .cloudCaseStudyPic {
     padding-bottom: 8rem;
   }
+
+  .prefTests {
+    grid-template-columns: 50% 50%;
+    margin-bottom: 5rem;
+  }
+
+  #prefTestPic {
+    margin: 0rem;
+    padding: 0rem;
+    width: 80%;
+  }
 }
 
 /*laptops & desktops */
 @media (min-width: 991px) {
-.hero-grid-left {
+  .hero-grid-left {
     margin-top: 0;
   }
 
@@ -144,21 +155,24 @@
     margin-bottom: 9rem;
   }
 
-/*Testing*/
-#logoPlacement1, #logoPlacement2 {
-  width: 100%;
-}
-
-  #testingIntro {
-    width: 40%;
+  /*Testing*/
+  #logoPlacement1, #logoPlacement2 {
+    width: 100%;
   }
 
-  .testing {
-    display: flex;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-    margin: auto
+  #testingIntro {
+    margin-bottom: 5rem;
+    width: 50%;
+  }
+
+  .prefTests {
+    margin-bottom: 10rem;
+  }
+
+  #prefTestPic {
+    margin: 0rem;
+    padding: 0rem;
+    width: 90%;
   }
 
   #newDocFinal, #dashboardFinal {
