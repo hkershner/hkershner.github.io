@@ -195,6 +195,10 @@ h5 {
   align-items: center;
 }
 
+.caseHeroText {
+  margin-bottom: 5rem;
+}
+
 /* Case Study Highlights */
 #case-study-highlights {
   background: #1E425D;
