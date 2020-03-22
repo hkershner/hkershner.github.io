@@ -1,6 +1,7 @@
-<svg width="316" height="316" viewBox="0 0 316 316" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<circle cx="158" cy="158" r="158" fill="#C4C4C4"/>
-<circle cx="158" cy="158" r="158" fill="url(#pattern0)"/>
+<svg width="413" height="354" viewBox="0 0 413 354" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M413 100.189C413 189.951 229.723 354 150.386 354C71.0488 354 0 325.762 0 236C0 146.238 41.8696 0 121.207 0C200.543 0 413 10.4268 413 100.189Z" fill="#2F8B8B" fill-opacity="0.15"/>
+<circle cx="201" cy="196" r="158" fill="#C4C4C4"/>
+<circle cx="201" cy="196" r="158" fill="url(#pattern0)"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="translate(0 -0.166667) scale(0.00104167)"/>

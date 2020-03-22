@@ -22,10 +22,7 @@ section {
 }
 
 header {
-  background-color: #1E425D;
-  height: 16vh;
-  padding-top: 2rem;
-  width: 100vw;
+  padding-bottom: 12rem;
 }
 
 #navLink {
@@ -33,9 +30,9 @@ header {
 }
 
 .navLink {
-  color: #E5E5E5;
+  color: #333736;
   float: right;
-  font-family: "Julius Sans One", sans-serif;
+  font-family: 'Cardo', serif;
   font-size: 1.7rem;
   letter-spacing: 1.5px;
   padding: 3rem;
@@ -46,18 +43,13 @@ header {
 .logo {
   display: inline-flex;
   float: left;
-  margin-left: 2rem;
-}
-
-.name {
-  display: none;
-  font-family: "Julius Sans One", sans-serif;
-  text-decoration: none;
+  margin-left: 3rem;
+  padding-top: 3.5rem;
 }
 
 /* Case Study paragraph text */
 p, li {
-  font-family: "Garamond", serif;
+  font-family: 'Cardo', serif;
   font-size: 1.5rem;
   line-height: 167.2%;
   margin-top: .5rem;
@@ -69,7 +61,7 @@ p {
 }
 
 .pHighlight {
-  font-family: "Julius Sans One", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.4rem;
 }
 
@@ -79,58 +71,63 @@ p {
   padding-bottom: 2rem;
 }
 
+/*Landing page h1*/
+#hello {
+  background-image: url(../images/underline.Small.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 45%;
+  float: left;
+  background-position: center;
+  padding: 8px 0;
+  padding-bottom: 2.5rem;
+}
+
 /* Landing page paragraph text */
 #heroText {
-  font-family: "Garamond", serif;
+  font-family: 'Cardo', serif;
   font-size: 1.8rem;
   line-height: 150%;
   margin-right: auto;
-  margin-top: .5rem;
+  margin-top: 8rem;
 }
 
 /*Primary & secondary case study label text on landing page */
 .p1, .p3 {
-  color: #E5E5E5;
-  font-family: "Garamond", serif;
+  color: #333736;
+  font-family: 'Cardo', serif;
   font-size: 1.8rem;
   margin-top: .5rem;
 }
 
 /*color palette text */
 .p2 {
-  font-family: "Garamond", serif;
+  font-family: 'Cardo', serif;
   font-size: 1.5rem;
   line-height: 167.2%;
   padding-bottom: 0;
 }
 
 h1 {
-  font-family: "Julius Sans One", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 3.2rem;
   padding-bottom: 3rem;
-  text-transform: uppercase;
 }
 
 h2 {
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
   padding-bottom: 2rem;
-  text-transform: uppercase;
 }
 
 /* Case Study Titles */
 h3 {
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 2.4rem;
-}
-
-.bioHeading {
-  padding-bottom: 2rem;
 }
 
 /* User Survey Percentages or Highlights */
 h4 {
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 4.8rem;
   padding-bottom: 2rem;
   text-align: center;
@@ -138,7 +135,7 @@ h4 {
 
 /* Let's Connect */
 h5 {
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
   padding-bottom: 2rem;
   text-align: center;
@@ -149,11 +146,16 @@ h5 {
   padding-bottom: 8rem;
 }
 
+.project-grid {
+  display: grid;
+}
+
 .project_card {
+  margin: auto;
   text-decoration: none;
 }
 
-.caseStudyPic, .cloudCaseStudyPic, .projectPic {
+.caseStudyPic, .cloudCaseStudyPic {
   width: 100%;
 }
 
@@ -163,7 +165,7 @@ h5 {
   box-shadow: 0rem 0rem 0.5rem grey;
   border-radius: 2rem;
   color: #fff;
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1.6rem;
   margin-top: 5rem;
   margin-bottom: 9rem;
@@ -171,20 +173,18 @@ h5 {
   text-decoration: none;
 }
 
-/* Gray element across case study cards */
-.label, .labelSmall {
-  background-color: #1E425D;
-  bottom: 5.5rem;
-  opacity: .85;
-  padding: 1.6rem;
-  position: relative;
-  text-align: center;
+.label {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  padding-bottom: 12rem;
 }
 
 /* Case Study titles */
 .casestudy {
   color: #E5E5E5;
-  font-family: "Garamond", serif;
+  font-family: "Cardo", serif;
   font-size: 1.8rem;
   margin-top: .5rem;
 }
@@ -290,12 +290,30 @@ ul {
   text-align: center;
 }
 
+/*Bio elements*/
+
 #profilePic {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-bottom: 7rem;
-  margin-top: 7rem;
+  padding-bottom: 8rem;
+}
+
+.bioPic {
+  display: none;
+}
+
+.bioHeading {
+  background-image: url(../images/underline.svg);
+  background-repeat: no-repeat;
+  float: left;
+  background-position: center;
+  padding: 8px 0;
+  padding-bottom: 2.5rem;
+}
+
+.bioText {
+  padding-top: 6rem;
 }
 
 /* footer elements */
@@ -319,27 +337,9 @@ ul {
   padding-right: 8rem;
 }
 
-footer {
-  background-color: #1E425D;
-  background-image: url(../images/FooterDetail.svg);
-  background-size: cover;
-  height: 12rem;
-  width: 100%;
-}
 
 /* tablets */
 @media (min-width: 575px) {
-  .name {
-    color: #E5E5E5;
-    display: inline-flex;
-    float: left;
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 1.7rem;
-    letter-spacing: 1.5px;
-    padding: 3rem;
-    padding-top: 3.5rem;
-  }
-
   h1 {
     font-size: 4rem;
   }
@@ -372,28 +372,39 @@ footer {
   .project-grid {
     display: grid;
     grid-template-columns: 40% 40%;
-    grid-gap: 5rem;
+    grid-gap: 10rem;
     justify-content: center;
   }
 
-  .projectPic {
-    width: 100%;
-  }
-
   /*About Page*/
-  #bioIntro {
-    margin-right: 30rem;
-    margin-top: 7rem;
-  }
-
-  #bioText {
-    margin-right: 30rem;
-  }
-
-  #profilePic {
+  /*#profilePic {
     display: inline;
     float: right;
     padding-left: 2rem
+  }*/
+
+  .bio {
+    display: grid;
+    grid-column-gap: 10rem;
+    grid-template-columns: 40% 40%;
+  }
+
+  #bioAllText {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  #bioPics {
+    grid-column-start: 2;
+  }
+
+  #profilePic {
+    padding-bottom: 0rem;
+  }
+
+  .bioPic {
+    display: block;
+    padding-top: 40rem;
   }
 
   /*Case Study Pages*/
@@ -462,10 +473,6 @@ footer {
 
 /*laptops & desktops */
 @media (min-width: 991px) {
-  header {
-    height: 26vh;
-  }
-
   .logo {
     margin-left: 5rem;
   }
@@ -494,8 +501,13 @@ footer {
     font-size: 1.8rem;
   }
 
-  /*Bio paragraphs & case study testing*/
-  #bioIntro, #bioText, .testingText, #finalTestingResults {
+  /*Bio page styles*/
+  .bio {
+    grid-column-gap: 20rem;
+  }
+
+  /*case study testing*/
+  .testingText, #finalTestingResults {
     width: 50%;
   }
 
