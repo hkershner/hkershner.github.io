@@ -23,21 +23,6 @@
 
 /* tablets */
 @media (min-width: 575px) {
-.caption_left {
-    margin-left: -9rem;
-    padding-left: 5rem;
-  }
-
-  #userFlows {
-    display: none;
-  }
-
-  #userFlowDesktop {
-    display: flex;
-    margin-bottom: 0rem;
-    width: 100%;
-  }
-
   #wireframesMobile {
     margin-left: 9rem;
     width: 70%;
@@ -70,7 +55,7 @@
     position: absolute;
   }
 
-  #userFlowDesktop, #yapperLogosDesktop {
+  #yapperLogosDesktop {
     margin: 2rem;
     width: 50%;
   }
@@ -125,9 +110,5 @@
     display: block;
     margin-bottom: 5rem;
     width: 100%;
-  }
-
-  .conclusion {
-    grid-column-gap: 6rem;
   }
 }

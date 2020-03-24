@@ -160,11 +160,11 @@ h5 {
 }
 
 .button {
-  background: #2F8B8B;
+  background: #EDE7C7;
   border: none;
   box-shadow: 0rem 0rem 0.5rem grey;
   border-radius: 2rem;
-  color: #fff;
+  color: #333736;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.6rem;
   margin-top: 5rem;
@@ -189,24 +189,23 @@ h5 {
   margin-top: .5rem;
 }
 
-.hero-grid-right {
+.hero-grid-right, .wordWebs {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.caseHeroText {
+.caseHeroText, .underlineText {
   margin-bottom: 5rem;
+  padding-top: 8rem;
 }
 
-/* Case Study Highlights */
-#case-study-highlights {
-  background: #1E425D;
-  border-radius: 0 3rem 3rem 0;
-  color: #ffff;
-  margin-left: -3rem;
-  padding-left: 5rem;
-  padding-top: 6rem;
+#ellipsis {
+  margin-bottom: 8rem;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .r-d-t {
@@ -219,7 +218,7 @@ h5 {
   text-align: center;
 }
 
-.callout, #centeredCallout {
+/*.callout, #centeredCallout {
   background: #2D6086;
   bottom: 3rem;
   color: #ffff;
@@ -242,10 +241,9 @@ h5 {
 
 #wireframesDesktop {
   display: none;
-}
-
-#userFlows, #yapperLogos, #wordwebs {
-  width: 100vw;
+}*/
+#yapperLogos, #wordwebs, .caseStudyPic {
+  width: 100%;
 }
 
 .wireframes {
@@ -253,8 +251,8 @@ h5 {
   grid-gap: 10rem;
 }
 
-#wordWebs {
-  margin-bottom: 5rem;
+#wordWebs, .logoSketches {
+  margin-bottom: 8rem;
 }
 
 .colorPalette {
@@ -264,34 +262,30 @@ h5 {
 }
 
 ul {
-  list-style-type: circle;
+  list-style: none;
   margin-left: 5rem;
   margin-right: 3rem;
   margin-bottom: 5rem;
 }
 
-#finalTestingResults, #conclusion {
+li::before {
+  content: "● ";
+  color: #DCE9F7;
+  display: inline-block;
+  margin-left: -2rem;
+  width: 1.75rem;
+}
+
+.conclusion {
   margin-bottom: 12rem;
 }
 
-#conclusion {
-  background: #1E425D;
-  bottom: 3rem;
-  color: #ffff;
-  margin-bottom: 5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  width: 100vw;
-}
-
-#conclusionText {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  text-align: center;
+.conclusionTitle {
+  margin-top: 6rem;
+  padding-bottom: 2rem;
 }
 
 /*Bio elements*/
-
 #profilePic {
   align-items: center;
   display: flex;
@@ -303,13 +297,13 @@ ul {
   display: none;
 }
 
-.bioHeading {
+.bioHeading, .title, #conclusionText {
   background-image: url(../images/underline.svg);
   background-repeat: no-repeat;
   float: left;
   background-position: center;
   padding: 8px 0;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3rem;
 }
 
 .bioText {
@@ -336,7 +330,6 @@ ul {
   padding: 3rem;
   padding-right: 8rem;
 }
-
 
 /* tablets */
 @media (min-width: 575px) {
@@ -376,13 +369,6 @@ ul {
     justify-content: center;
   }
 
-  /*About Page*/
-  /*#profilePic {
-    display: inline;
-    float: right;
-    padding-left: 2rem
-  }*/
-
   .bio {
     display: grid;
     grid-column-gap: 10rem;
@@ -417,8 +403,7 @@ ul {
   }
 
   .r-d-t {
-    margin-left: 6rem;
-    margin-right: 10rem;
+    width: 50%;
   }
 
   .summary {
@@ -507,7 +492,7 @@ ul {
   }
 
   /*case study testing*/
-  .testingText, #finalTestingResults {
+  .logoDesign, .testingText, #finalTestingResults {
     width: 50%;
   }
 
@@ -594,7 +579,7 @@ ul {
     width: 90%;
   }
 
-  #userFlowDesktop, #yapperLogosDesktop, #logoSketchesDesktop {
+  #yapperLogosDesktop, #logoSketchesDesktop {
     bottom: 3rem;
     display: flex;
     float: right;
@@ -603,7 +588,7 @@ ul {
     width: 70%;
   }
 
-  #userFlowDesktop, #logoSketchesDesktop {
+  #logoSketchesDesktop {
     bottom: 20rem;
     margin: 2rem;
     width: 50%;
@@ -626,6 +611,10 @@ ul {
 
   #brandColors {
     grid-column-start: 2;
+  }
+
+  .ellipsis {
+    padding-top: 12rem;
   }
 
   #prefTestPic {
@@ -651,17 +640,15 @@ ul {
     margin-bottom: 5rem;
   }
 
-  #worked, #didNotWork, #keytakeaways {
-    display: inline-block;
-    margin-right: 3rem;
-    width: 30%;
+  .conclusion {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 10rem;
   }
 
-  #worked {
-    float: left;
-  }
-
-  #keytakeaways {
-    float: right;
+  #conclusionText {
+    grid-column-start: span 3;
+    margin: auto;
   }
 }
