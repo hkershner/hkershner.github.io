@@ -218,30 +218,6 @@ h5 {
   text-align: center;
 }
 
-/*.callout, #centeredCallout {
-  background: #2D6086;
-  bottom: 3rem;
-  color: #ffff;
-  margin-bottom: 9rem;
-  width: 100vw;
-}
-
-.calloutTitle, #centeredCalloutTitle {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding-top: 5rem;
-  width: 90%;
-}
-
-.calloutText, #centeredCalloutText {
-  padding-left: 4rem;
-  width: 90%;
-}
-
-#wireframesDesktop {
-  display: none;
-}*/
 #yapperLogos, #wordwebs, .caseStudyPic {
   width: 100%;
 }
@@ -283,6 +259,10 @@ li::before {
 .conclusionTitle {
   margin-top: 6rem;
   padding-bottom: 2rem;
+}
+
+#worked {
+  padding-top: 8rem;
 }
 
 /*Bio elements*/
