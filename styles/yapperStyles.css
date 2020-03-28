@@ -15,12 +15,6 @@
   margin-bottom: 0rem;
 }
 
-#brandColors {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* tablets */
 @media (min-width: 575px) {
   #wireframesMobile {
