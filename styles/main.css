@@ -100,7 +100,7 @@ h2 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
   padding-bottom: 2rem;
-  }
+}
 
 /* Case Study Titles & index labels */
 h3 {
@@ -163,7 +163,7 @@ h5 {
   justify-content: center;
   margin-top: 4rem;
   padding-bottom: 8rem;
-  }
+}
 
 .hero-grid-right {
   display: flex;
@@ -206,7 +206,7 @@ h5 {
   padding-bottom: 4rem;
 }
 
-#yapperLogos, .caseStudyPic, #wordWebs, #profilePic, #usabilityImages {
+#yapperLogos, .caseStudyPic, #wordWebs, #profilePic, #usabilityImages, .bioPic {
   width: 100%;
 }
 
@@ -306,12 +306,20 @@ li::before {
 
 /* tablets */
 @media (min-width: 575px) {
-  h1 {
-    font-size: 4rem;
+  section {
+    margin: 6rem;
   }
 
-  h3 {
-    font-size: 2.5rem;
+  .logo {
+    margin-left: 6rem;
+  }
+
+  #navLink {
+    margin-right: 6rem;
+  }
+
+  .navLink {
+    padding: 4rem;
   }
 
   h5 {
@@ -338,7 +346,7 @@ li::before {
   .project-grid {
     display: grid;
     grid-template-columns: 40% 40%;
-    grid-gap: 10rem;
+    grid-gap: 6rem;
     justify-content: center;
   }
 
@@ -371,8 +379,8 @@ li::before {
     margin-top: 4rem;
   }
 
-  #case-study-highlights {
-    margin-left: -10rem;
+  .caseHeroText {
+    width: 60%;
   }
 
   .r-d-t {
@@ -384,28 +392,12 @@ li::before {
     display: grid;
   }
 
-  .callout, #centeredCallout {
-    margin-bottom: 9rem;
+  .visualDesignGrid {
+    display: grid;
   }
 
-  .calloutTitle {
-    justify-content: left;
-    margin-left: 6rem;
-    padding-top: 7rem;
-  }
-
-  #centeredCalloutTitle, #centeredCalloutText {
-    width: 100%;
-  }
-
-  #centeredCalloutText {
-    padding-right: 20%;
-    padding-left: 20%;
-    text-align: center;
-  }
-
-  .calloutText {
-    margin: 2rem;
+  #wordWebs {
+    padding-bottom: 6rem;
   }
 
   .caseStudyPic {
@@ -417,10 +409,18 @@ li::before {
     display: grid;
   }
 
+  #brandColors {
+    padding-top: 6rem;
+  }
+
   #finalTests, .cloudPalette {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .logoSketches {
+    margin-bottom: 0rem;
   }
 
   #conclusion {
@@ -432,15 +432,19 @@ li::before {
 /*laptops & desktops */
 @media (min-width: 991px) {
   .logo {
-    margin-left: 5rem;
+    margin-left: 8rem;
   }
 
   #navLink {
-    margin-right: 4rem;
+    margin-right: 8rem;
   }
 
   section {
-    margin: 6rem;
+    margin: 8rem;
+  }
+
+  .caseHeroText {
+    width: 100%;
   }
 
   .project-grid {
@@ -527,7 +531,7 @@ li::before {
     grid-row-start: 3;
   }
 
-  .calloutText, #heroText {
+  .calloutText, #heroText, .logoDesign {
     width: 40%;
   }
 
@@ -536,23 +540,19 @@ li::before {
   }
 
   .wireframes {
+    grid-gap: 10rem;
     grid-template-columns: 40% 50%;
-  }
-
-  #wireframesDesktop, .option1, .option2 {
-    display: flex;
   }
 
   #wireframesDesktop {
     width: 100%;
   }
 
-  #wordWebsDesktop {
+.option1, .option2 {
     display: flex;
-    width: 90%;
   }
 
-  #yapperLogosDesktop, #logoSketchesDesktop {
+  #logoSketchesDesktop {
     bottom: 3rem;
     display: flex;
     float: right;
@@ -573,17 +573,17 @@ li::before {
 
   /*Visual Design*/
   .visualDesignGrid {
-    display: grid;
     grid-column-gap: 10rem;
     grid-row-gap: 6rem;
     grid-template-columns: 40% 60%;
-    margin-bottom: 20rem;
-    margin-left: -3rem;
-    margin-top: 9rem;
-  }
+    }
 
   #brandColors {
     grid-column-start: 2;
+  }
+
+  #colorPaletteRight {
+    padding-left: 8rem;
   }
 
   .ellipsis {
@@ -605,7 +605,7 @@ li::before {
     grid-column: span 2;
   }
 
-  #testingIntro, #finalTestText {
+  #testingIntro, #finalTestText, .conclusion {
     width: 50%;
   }
 
@@ -613,15 +613,4 @@ li::before {
     margin-bottom: 5rem;
   }
 
-  .conclusion {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 50% 50%;
-    grid-column-gap: 10rem;
-  }
-
-  #conclusionText {
-    grid-column-start: span 3;
-    margin: auto;
-  }
 }
