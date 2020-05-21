@@ -1,0 +1,77 @@
+#simHero {
+  padding-top: 9rem;
+  width: 100%;
+}
+
+.wireframes, #mockupOption {
+  margin: auto;
+  padding-bottom: 4rem;
+}
+
+.quote {
+  font-family: 'josefin sans', sans-serif;
+  font-size: 4rem;
+  padding-bottom: 6rem;
+}
+
+#simLogo {
+  margin: auto;
+  padding-bottom: 4rem;
+  width: 40%;
+}
+
+.option1, .option2 {
+  padding-bottom: 4rem;
+  width: 100%;
+}
+
+#underline {
+  background-image: url(../images/underline.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 2.5rem;
+}
+
+.prefTests {
+  padding-top: 3rem;
+}
+
+/*tablets*/
+@media (min-width: 575px) {
+  #mockupOption, .wireframes {
+    width: 100%;
+  }
+
+  #simLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*laptops & desktops */
+@media (min-width: 991px) {
+  #simHero {
+    width: 150%;
+  }
+
+  .IA {
+    margin-top: 8rem;
+  }
+
+  #wireframe1 {
+    padding-top: 13.2rem;
+  }
+
+  #wireframe2 {
+    width: 114%;
+  }
+
+  .usabilityTesting {
+    width: 50%;
+  }
+
+  .competitiveAnalysis {
+    width: 60%;
+  }
+}
