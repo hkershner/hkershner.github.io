@@ -350,6 +350,10 @@ li::before {
     justify-content: center;
   }
 
+  #cloudDesk_project_card {
+    grid-column: span 2;
+  }
+
   .bio {
     display: grid;
     grid-column-gap: 10rem;
