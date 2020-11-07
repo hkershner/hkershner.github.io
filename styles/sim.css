@@ -36,6 +36,31 @@
   padding-bottom: 2.5rem;
 }
 
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+#pomegranate {
+  background-image: url(../images/sim/pomegranate.svg);
+}
+
+#jade {
+  background-image: url(../images/sim/jade.svg);
+}
+
+#yellow {
+  background-image: url(../images/sim/yellow.svg);
+}
+
+#pomegranate, #jade, #yellow {
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 1.5rem;
+}
+
 .prefTests {
   padding-top: 3rem;
 }
@@ -51,13 +76,7 @@
     margin: auto;
   }
 
-  #simHiFiColors {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #simLogo {
+  #simHiFiColors, #simLogo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +112,8 @@
   .competitiveAnalysis {
     width: 60%;
   }
+
+  #simLogo, .brand {}
 
   #quote2 {
     grid-column: span 2;
