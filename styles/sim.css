@@ -113,9 +113,39 @@
     width: 60%;
   }
 
-  #simLogo, .brand {}
+  .visualComponents {
+    padding-top: 17rem;
+  }
+
+  #simHiFiColors {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-bottom: 0;
+  }
 
   #quote2 {
+    grid-column: span 2;
+    width: 50%;
+  }
+
+  #simMockupOptions {
+    grid-template-columns: 35% 35% 35%;
+  }
+
+  #mockupOption2 {
+    width: 100%;
+  }
+
+  #lastTestingTextParent {
+    display: grid;
+    grid-row-gap: 5rem;
+    grid-template-columns: 100% 100% min-content;
+    justify-items: center;
+  }
+
+  #lastTestingTextChild {
     grid-column: span 2;
     width: 50%;
   }
